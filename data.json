@@ -1,0 +1,16 @@
+[
+  {
+    "experience": [
+      {
+        "date": "WEB DEVELOPER - JANUARY 2016 - PRESENTE",
+        "company": "BRAIN & MIND",
+        "description": "I\'m one of the Founders, not afraid to take risks and explore new possibilities and horizons. creating WebSites, Web Systems and Applications Mobile using AngularJs, Laravel, Css3, Html5, Jquery, Ajax(Json)."
+      },
+      {
+        "date": "WEB DEVELOPER - APRIL 2010 - PRESENT",
+        "company": "URANET- PROJETOS E SISTEMAS LTDA",
+        "description": "Analysis and development of new solutions for CallCenter systems. Currently for clients like Bradesco Promotoras, Tenda, Vivo, Honda, among others. Using language PHP, JavaScript (JQuery), Ajax, SQL, developing layout with HTML, CSS and Bootstrap Framework. Integration with other platforms using WebService."
+      }
+    ]
+  }
+]
