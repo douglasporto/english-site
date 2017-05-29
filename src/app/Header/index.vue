@@ -3,13 +3,22 @@
     <v-nav nav-class="red darken-1 fixe">
       <v-container class='container-nav'>
         <router-link to="/" class="brand-logo center" >{{ nameSite }}</router-link>
-        <a href="#" v-side-nav:demo="nav" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
+        <ul class="right">
+            <li>
+                <v-btn v-dropdown:dropdown class="amber darken-2" hover>Dark Yellow</v-btn>
+            </li>
+        </ul>
+        <!-- <a href="#" v-side-nav:demo="nav" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
         <v-side-nav id="demo">
-          <!-- <router-link :to="{ name: 'Lesson', query: { plan: 'private' }, path: '/vocabulary' }">User</router-link> -->
           <li v-for="side in sidebar"><router-link :to="side.url">{{ side.name }}</router-link></li>
-       </v-side-nav>
+       </v-side-nav> -->
       </v-container>
     </v-nav>
+    <v-dropdown id="dropdown">
+        <li v-for="obj in sidebar[1].menu">
+            <router-link :to="obj.url" class="amber-text text-darken-2">{{ obj.name }}</router-link>
+        </li>
+    </v-dropdown>
   </div>
 </template>
 <script>

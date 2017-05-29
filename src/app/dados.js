@@ -4,7 +4,14 @@ export const createDados = {
     'slug': 'english',
     'pages': [
       { 'name': 'Vocabulario', 'url': '/vocabulary' },
-      { 'name': 'Lesson A1', 'url': '/vocabulary?class=A1' }
+      {
+        'name': 'Dark Yellow',
+        'menu': [
+          { 'name': 'Lesson 1A', 'url': '/vocabulary?class=0' },
+          { 'name': 'Lesson 2A', 'url': '/vocabulary?class=1' },
+          { 'name': 'Lesson 3A', 'url': '/vocabulary?class=2' }
+        ]
+      }
     ]
   },
   'classies': [
@@ -41,7 +48,6 @@ export const createDados = {
         { 'english': 'Movie/film', 'translate': 'Filme' },
         { 'english': 'Music', 'translate': 'Música' },
         { 'english': 'Picture', 'translate': 'Quadro/foto' }
-
       ]
     },
     {

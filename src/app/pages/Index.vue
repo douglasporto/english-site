@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col s12">
                   <v-card>
-                      <div class="v-card-content amber-text text-darken-4">
+                      <div class="v-card-content indigo darken-4 white-text">
                           <header class="center">
                               <h5><i class="material-icons">star_border</i>Vocabulary<i class="material-icons">star_border</i></h5>
                           </header>
@@ -53,26 +53,28 @@ export default {
   },
   computed: {
     filterWord: function () {
+      var voc
+      if (this.$route.query.class) {
+        console.log(this.$store.state.classies[this.$route.query.class].vocabulary)
+        console.log(this.$route.query.class)
+        for (voc in this.$store.state.classies[this.$route.query.class].vocabulary) {
+          this.vocabulary.unshift(this.$store.state.classies[this.$route.query.class].vocabulary[voc])
+        }
+      } else {
+        this.classies = this.$store.state.classies
+        for (var lesson in this.classies) {
+          for (voc in this.$store.state.classies[lesson].vocabulary) {
+            this.vocabulary.unshift(this.$store.state.classies[lesson].vocabulary[voc])
+          }
+        }
+        this.vocabulary = orderBy(this.vocabulary, ['english'], ['asc'])
+      }
       if (this.filtro) {
         let exp = new RegExp(this.filtro.trim(), 'i')
         return this.vocabulary.filter(vocabulary => exp.test(vocabulary.translate))
       } else {
         return this.vocabulary
       }
-    }
-  },
-  created () {
-    console.log(this.$route.query.class)
-    if (this.$route.query.class) {
-      console.log('ok')
-    } else {
-      this.classies = this.$store.state.classies
-      for (var lesson in this.classies) {
-        for (var voc in this.$store.state.classies[lesson].vocabulary) {
-          this.vocabulary.unshift(this.$store.state.classies[lesson].vocabulary[voc])
-        }
-      }
-      this.vocabulary = orderBy(this.vocabulary, ['english'], ['asc'])
     }
   }
 }
