@@ -1,9 +1,10 @@
 export const createDados = {
   'site': {
-    'name': 'English',
+    'name': 'English Class',
     'slug': 'english',
     'pages': [
-      { 'name': 'Vocabulario', 'url': '/vocabulary' }
+      { 'name': 'Vocabulario', 'url': '/vocabulary' },
+      { 'name': 'Lesson A1', 'url': '/vocabulary?class=A1' }
     ]
   },
   'classies': [

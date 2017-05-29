@@ -62,16 +62,18 @@ export default {
     }
   },
   created () {
-    this.classies = this.$store.state.classies
-    for (var lesson in this.classies) {
-      // console.log(lesson)
-      // console.log(this.$store.state.classies[lesson].vocabulary)
-      for (var voc in this.$store.state.classies[lesson].vocabulary) {
-        this.vocabulary.unshift(this.$store.state.classies[lesson].vocabulary[voc])
+    console.log(this.$route.query.class)
+    if (this.$route.query.class) {
+      console.log('ok')
+    } else {
+      this.classies = this.$store.state.classies
+      for (var lesson in this.classies) {
+        for (var voc in this.$store.state.classies[lesson].vocabulary) {
+          this.vocabulary.unshift(this.$store.state.classies[lesson].vocabulary[voc])
+        }
       }
+      this.vocabulary = orderBy(this.vocabulary, ['english'], ['asc'])
     }
-    console.log(this.vocabulary)
-    this.vocabulary = orderBy(this.vocabulary, ['english'], ['asc'])
   }
 }
 </script>
