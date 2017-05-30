@@ -8,15 +8,17 @@ export const createDados = {
         'name': 'Dark Yellow',
         'menu': [
           { 'name': 'Lesson 1A', 'url': '/vocabulary?class=0' },
-          { 'name': 'Lesson 2A', 'url': '/vocabulary?class=1' },
-          { 'name': 'Lesson 3A', 'url': '/vocabulary?class=2' }
+          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=1' },
+          { 'name': 'Lesson 3C', 'url': '/vocabulary?class=2' },
+          { 'name': 'Lesson 2A', 'url': '/vocabulary?class=3' },
+          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=4' }
         ]
       }
     ]
   },
   'classies': [
     {
-      'lesson': 'A1',
+      'lesson': '1A',
       'vocabulary': [
         { 'english': 'To sleep', 'translate': 'Dormir' },
         { 'english': 'To put (in/on)', 'translate': 'Colocar (dentro de/sobre)' },
@@ -51,7 +53,7 @@ export const createDados = {
       ]
     },
     {
-      'lesson': 'A2',
+      'lesson': '1B',
       'vocabulary': [
         { 'english': 'To clean', 'translate': 'Limpar/arrumar' },
         { 'english': 'To shave', 'translate': 'Barbear-se/depilar-se' },
@@ -89,7 +91,7 @@ export const createDados = {
       ]
     },
     {
-      'lesson': 'A3',
+      'lesson': '1C',
       'vocabulary': [
         { 'english': 'To cook (for)', 'translate': 'Cozinhar (para)' },
         { 'english': 'To wash (for)', 'translate': 'Lavar (para)' },
@@ -130,6 +132,55 @@ export const createDados = {
         { 'english': 'Mixer', 'translate': 'Batedeira' },
         { 'english': 'Blender', 'translate': 'Liquidificador' },
         { 'english': 'Opener', 'translate': 'Abridor' }
+      ]
+    },
+    {
+      'lesson': '2A',
+      'vocabulary': [
+        { 'english': 'There is', 'translate': 'Há / existe' },
+        { 'english': 'There are', 'translate': 'Há / existem' },
+        { 'english': 'In (the)', 'translate': 'Em / na(s) / no(s) (dentro de)' },
+        { 'english': 'On (the)', 'translate': 'Em / na(s) / no(s)(em cima / sobre)' },
+        { 'english': 'Under', 'translate': 'Embaixo de' },
+        { 'english': 'Beside', 'translate': 'Ao lado de' },
+        { 'english': 'Between', 'translate': 'Entre (duas coisas)' },
+        { 'english': 'Among', 'translate': 'Entre (várias coisas)' },
+        { 'english': 'Behind', 'translate': 'Atrás de' },
+        { 'english': 'In front of', 'translate': 'Diante de / em frente à' },
+        { 'english': 'In the middle of', 'translate': 'No meio de' },
+        { 'english': 'Right (hand) side', 'translate': 'Lado direito' },
+        { 'english': 'Left (hand) side', 'translate': 'Lado esquerdo' }
+      ]
+    },
+    {
+      'lesson': '2B',
+      'vocabulary': [
+        { 'english': 'Zoo', 'translate': 'Zoológico' },
+        { 'english': 'Mall', 'translate': 'Centro de compras / shopping center' },
+        { 'english': 'Flower shop', 'translate': 'Floricultura' },
+        { 'english': 'Newsstand', 'translate': 'Banca de jornal' },
+        { 'english': 'Post office', 'translate': 'Correio' },
+        { 'english': 'Bank', 'translate': 'Banco' },
+        { 'english': 'Gas station', 'translate': 'Posto de gasolina' },
+        { 'english': 'Parking lot', 'translate': 'Estacionamento' },
+        { 'english': 'Bus station', 'translate': 'Estação / terminal de ônibus' },
+        { 'english': 'Subway station', 'translate': 'Estação de metrô' },
+        { 'english': 'Hotel', 'translate': 'Hotel' },
+        { 'english': 'Museum', 'translate': 'Museu' },
+        { 'english': 'Theater', 'translate': 'Teatro' },
+        { 'english': 'Movies / movie  theater / cinema', 'translate': 'Cinema' },
+        { 'english': 'Park', 'translate': 'Parque' },
+        { 'english': 'Church', 'translate': 'Igreja' },
+        { 'english': 'City hall', 'translate': 'Prefeitura' },
+        { 'english': 'Police station', 'translate': 'Delegacia' },
+        { 'english': 'Across (from)', 'translate': 'Em frente (à / ao)' },
+        { 'english': 'Near', 'translate': 'Perto de' },
+        { 'english': 'Next to', 'translate': 'Ao lado de / perto de / próximo à' },
+        { 'english': 'Far (from)', 'translate': 'Longe (de)' },
+        { 'english': '(On the) corner', 'translate': '(Na) esquina' },
+        { 'english': 'Avenue (Ave.)', 'translate': 'Avenida' },
+        { 'english': 'Street (St.)', 'translate': 'Rua' },
+        { 'english': 'Road (Rd.)', 'translate': 'Via / estrada' }
       ]
     }
 

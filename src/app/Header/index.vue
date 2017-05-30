@@ -3,15 +3,18 @@
     <v-nav nav-class="red darken-1 fixe">
       <v-container class='container-nav'>
         <router-link to="/" class="brand-logo center" >{{ nameSite }}</router-link>
-        <ul class="right">
-            <li>
-                <v-btn v-dropdown:dropdown class="amber darken-2" hover>Dark Yellow</v-btn>
-            </li>
+        <ul class="right hide-on-med-and-down">
+          <li>
+              <router-link to="/vocabulary" class="">Vocabulário</router-link>
+          </li>
+          <li>
+              <v-btn v-dropdown:dropdown class="amber darken-2" hover>Dark Yellow</v-btn>
+          </li>
         </ul>
-        <!-- <a href="#" v-side-nav:demo="nav" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
+        <a href="#" v-side-nav:demo="nav" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <v-side-nav id="demo">
           <li v-for="side in sidebar"><router-link :to="side.url">{{ side.name }}</router-link></li>
-       </v-side-nav> -->
+       </v-side-nav>
       </v-container>
     </v-nav>
     <v-dropdown id="dropdown">
