@@ -13,7 +13,8 @@
         </ul>
         <a href="#" v-side-nav:demo="nav" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <v-side-nav id="demo">
-          <li v-for="side in sidebar"><router-link :to="side.url">{{ side.name }}</router-link></li>
+          <li><router-link to="/vocabulary">Vocabulário</router-link></li>
+          <li v-for="side in  sidebar[1].menu"><router-link :to="side.url">{{ side.name }}</router-link></li>
        </v-side-nav>
       </v-container>
     </v-nav>

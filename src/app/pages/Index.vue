@@ -59,7 +59,19 @@ export default {
               <div class="col s12">
                   <v-card>
                       <div class="v-card-content">
-                          <input type="search" class="filtro" id="filtro" v-on:input="filtro = $event.target.value" placeholder="Search Word">
+                        <div class="input-field">
+                            <v-icon prefix>search</v-icon>
+                            <v-text-input name="username"
+                                        id="username"
+                            ></v-text-input>
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="input-field">
+                            <v-icon prefix>search</v-icon>
+                            <input type="search" class="filtro" id="filtro" v-on:input="filtro = $event.target.value">
+                            <label for="username">Search Word In</label>
+                        </div>
+
                           <br>
                           <font class="switch"><i>Search Word In:</i></font>
                           <v-switch checked
@@ -67,7 +79,7 @@ export default {
                             off="Inglês"
                             v-model='language'
                           ></v-switch>
-                          <table class="striped">
+                          <table class="striped text-vocabulary">
                               <thead>
                                   <tr>
                                       <th>Word</th>
@@ -105,5 +117,13 @@ i {
 }
 .switch {
   font-size: 10px;
+}
+@media only screen and (max-width: 1200px) {
+  .text-vocabulary {
+    font-size: 28px;
+  }
+  html {
+    font-size: 18px;
+  }
 }
 </style>
