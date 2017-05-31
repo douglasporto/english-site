@@ -5,6 +5,7 @@ export default {
     return {
       vocabulary: [],
       classies: [],
+      homework: '',
       filtro: '',
       language: true,
       title: ''
@@ -15,17 +16,9 @@ export default {
       var voc
       this.vocabulary = []
       if (this.$route.query.class) {
-        this.title = 'Vocabulary - Lessons ' + this.$store.state.classies[this.$route.query.class].lesson
+        this.title = 'Lessons ' + this.$store.state.classies[this.$route.query.class].lesson
         for (voc in this.$store.state.classies[this.$route.query.class].vocabulary) {
           this.vocabulary.unshift(this.$store.state.classies[this.$route.query.class].vocabulary[voc])
-        }
-      } else {
-        this.title = 'All lessons'
-        this.classies = this.$store.state.classies
-        for (var lesson in this.classies) {
-          for (voc in this.$store.state.classies[lesson].vocabulary) {
-            this.vocabulary.unshift(this.$store.state.classies[lesson].vocabulary[voc])
-          }
         }
       }
       this.vocabulary = orderBy(this.vocabulary, ['english'], ['asc'])
@@ -40,6 +33,9 @@ export default {
         return this.vocabulary
       }
     }
+  },
+  created: function created () {
+    this.homework = this.$store.state.classies[this.$route.query.class].homework
   }
 }
 </script>
@@ -51,12 +47,39 @@ export default {
                   <v-card>
                       <div class="v-card-content indigo darken-4 white-text">
                           <header class="center">
-                              <h5><i class="material-icons">star_border</i>{{ title }}<i class="material-icons">star_border</i></h5>
+                              <h5><i class="material-icons">list</i>{{ title }}<i class="material-icons">list</i></h5>
                           </header>
                       </div>
                   </v-card>
               </div>
               <div class="col s12">
+                <v-card>
+                  <div class="v-card-content">
+                    <v-tabs>
+                      <v-tab target="#Vocabulary">Vocabulary</v-tab>
+                      <v-tab target="#homework">Homework</v-tab>
+                    </v-tabs>
+                  </div>
+                </v-card>
+              </div>
+              <div class="col s12" id="homework">
+                <v-card>
+                  <div class="v-card-content">
+                    <div class="row homework" v-for="(obj, index) in homework">
+                      <div class="col s8 question">{{ index + 1}} ) {{ obj.translate }}</div>
+                      <div class="col s4">
+                        <v-switch
+                          on="Show answer"
+                          off="Hide"
+                          v-model='obj.visible'
+                        ></v-switch>
+                      </div>
+                      <div v-show="obj.visible" class="col s12 answer">{{ obj.english }}</div>
+                    </div>
+                  </div>
+                </v-card>
+              </div>
+              <div class="col s12" id="Vocabulary">
                   <v-card>
                       <div class="v-card-content">
                         <div class="input-field">
@@ -117,5 +140,23 @@ i {
   html {
     font-size: 18px;
   }
+}
+.tabs .tab a {
+    color: #5c6bc0;
+}
+.tabs .tab a:hover {
+    color: #5c6bc0;
+}
+.tabs .indicator {
+    background-color: #c5cae9;
+}
+.homework {
+  font-size: 28px;
+  padding: 20px;
+  border-bottom: solid 1px #bbdefb;
+}
+.answer {
+  color: #c62828;
+  padding-left: 50px !important;
 }
 </style>

@@ -3,15 +3,15 @@ export const createDados = {
     'name': 'English Class',
     'slug': 'english',
     'pages': [
-      { 'name': 'Vocabulario', 'url': '/vocabulary' },
+      { 'name': 'Vocabulary', 'url': '/vocabulary' },
       {
         'name': 'Dark Yellow',
         'menu': [
-          { 'name': 'Lesson 1A', 'url': '/vocabulary?class=0' },
-          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=1' },
-          { 'name': 'Lesson 3C', 'url': '/vocabulary?class=2' },
-          { 'name': 'Lesson 2A', 'url': '/vocabulary?class=3' },
-          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=4' }
+          { 'name': 'Lesson 1A', 'url': '/lesson?class=0' },
+          { 'name': 'Lesson 2B', 'url': '/lesson?class=1' },
+          { 'name': 'Lesson 3C', 'url': '/lesson?class=2' },
+          { 'name': 'Lesson 2A', 'url': '/lesson?class=3' },
+          { 'name': 'Lesson 2B', 'url': '/lesson?class=4' }
         ]
       }
     ]
@@ -19,6 +19,10 @@ export const createDados = {
   'classies': [
     {
       'lesson': '1A',
+      'homework': [
+        { 'english': 'I love you', 'translate': 'Eu te Amo', 'visible': false },
+        { 'english': 'I love you', 'translate': 'Eu te Amo', 'visible': false }
+      ],
       'vocabulary': [
         { 'english': 'To sleep', 'translate': 'Dormir' },
         { 'english': 'To put (in/on)', 'translate': 'Colocar (dentro de/sobre)' },

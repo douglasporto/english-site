@@ -5,7 +5,7 @@
         <router-link to="/" class="brand-logo center" >{{ nameSite }}</router-link>
         <ul class="right hide-on-med-and-down">
           <li>
-              <router-link to="/vocabulary" class="">Vocabulário</router-link>
+              <router-link to="/vocabulary" class="">Vocabulary</router-link>
           </li>
           <li>
               <v-btn v-dropdown:dropdown class="amber darken-2" hover>Dark Yellow</v-btn>
@@ -13,7 +13,7 @@
         </ul>
         <a href="#" v-side-nav:demo="nav" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <v-side-nav id="demo">
-          <li><router-link to="/vocabulary">Vocabulário</router-link></li>
+          <li><router-link to="/vocabulary">Vocabulary</router-link></li>
           <li v-for="side in  sidebar[1].menu"><router-link :to="side.url">{{ side.name }}</router-link></li>
        </v-side-nav>
       </v-container>
