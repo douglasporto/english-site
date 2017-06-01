@@ -192,6 +192,33 @@ export const createDados = {
     },
     {
       'lesson': '2B',
+      'homework': [
+        {
+          'lesson': 'B',
+          'title': ' Look at the map and answer the question:',
+          'questions': [
+            { 'q': 'Where\'s the church?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the mall?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the subway station?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the zoo?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the newstand?', 'r': '', 'visible': false },
+            { 'q': 'Is the restaurant near the flower shop?', 'r': '', 'visible': false },
+            { 'q': 'Is the laundry far from the parking lot?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the gas station?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the movie theater?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the restaurant', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the post office?', 'r': '', 'visible': false },
+            { 'q': 'Is the hotel near the bus station?', 'r': '', 'visible': false },
+            { 'q': 'Is the parking lot for from the zoo?', 'r': '', 'visible': false },
+            { 'q': 'Where\'sthe police station?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the thearter?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the hospital?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s the museum?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s is the park?', 'r': '', 'visible': false },
+            { 'q': 'Where\'s is the hotel?', 'r': '', 'visible': false }
+          ]
+        }
+      ]
       'vocabulary': [
         { 'english': 'Zoo', 'translate': 'Zoológico' },
         { 'english': 'Mall', 'translate': 'Centro de compras / shopping center' },
