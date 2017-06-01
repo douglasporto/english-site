@@ -7,11 +7,11 @@ export const createDados = {
       {
         'name': 'Dark Yellow',
         'menu': [
-          { 'name': 'Lesson 1A', 'url': '/lesson?class=0' },
-          { 'name': 'Lesson 2B', 'url': '/lesson?class=1' },
-          { 'name': 'Lesson 3C', 'url': '/lesson?class=2' },
+          { 'name': 'Lesson 1A', 'url': '/vocabulary?class=0' },
+          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=1' },
+          { 'name': 'Lesson 3C', 'url': '/vocabulary?class=2' },
           { 'name': 'Lesson 2A', 'url': '/lesson?class=3' },
-          { 'name': 'Lesson 2B', 'url': '/lesson?class=4' }
+          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=4' }
         ]
       }
     ]
@@ -19,10 +19,6 @@ export const createDados = {
   'classies': [
     {
       'lesson': '1A',
-      'homework': [
-        { 'english': 'I love you', 'translate': 'Eu te Amo', 'visible': false },
-        { 'english': 'I love you', 'translate': 'Eu te Amo', 'visible': false }
-      ],
       'vocabulary': [
         { 'english': 'To sleep', 'translate': 'Dormir' },
         { 'english': 'To put (in/on)', 'translate': 'Colocar (dentro de/sobre)' },
@@ -140,6 +136,44 @@ export const createDados = {
     },
     {
       'lesson': '2A',
+      'homework': [
+        {
+          'lesson': 'B',
+          'title': 'Answer the following questions according to what you see in the drawing on page 32:',
+          'questions': [
+            { 'q': 'Is there toilet paper in the bathroom?', 'r': '', 'visible': false },
+            { 'q': 'Is there a sink in the bathroom?', 'r': '', 'visible': false },
+            { 'q': 'Is there a toothbrush in the medicine cabinet?', 'r': '', 'visible': false },
+            { 'q': 'Is there a bath towel in the bathroom?', 'r': '', 'visible': false },
+            { 'q': 'Is there dental floss between the razor and the toothpaste?', 'r': '', 'visible': false },
+            { 'q': 'Is there a hand towel on the right side of the sink?', 'r': '', 'visible': false },
+            { 'q': 'Are there soaps on the sink?', 'r': '', 'visible': false },
+            { 'q': 'Is there a comb in the bathroom?', 'r': '', 'visible': false },
+            { 'q': 'Is there a bathtub beside the toilet?', 'r': '', 'visible': false },
+            { 'q': 'Is there a deodorant in the medicine cabinet?', 'r': '', 'visible': false },
+            { 'q': 'Is there a toothpaste on the sink?', 'r': '', 'visible': false },
+            { 'q': 'Are there perfumes in the medicine cabinet?', 'r': '', 'visible': false },
+            { 'q': 'Is there a rug in the bathroom?', 'r': '', 'visible': false },
+            { 'q': 'Is there a shaving cream in the medicine cabinet?', 'r': '', 'visible': false }
+          ]
+        },
+        {
+          'lesson': 'C',
+          'title': ' Turn the following sentences into negative and interrogative:',
+          'questions': [
+            { 'q': 'There are cushions on the couch.', 'r': '', 'visible': false },
+            { 'q': 'There is an armchair in the living room.', 'r': '', 'visible': false },
+            { 'q': 'There are sheets in the closet.', 'r': '', 'visible': false },
+            { 'q': 'There are cans on the right side of the fridge.', 'r': '', 'visible': false },
+            { 'q': 'There is a dining table in the middle of the dining room.', 'r': '', 'visible': false },
+            { 'q': 'There is a chair in front of the bed.', 'r': '', 'visible': false },
+            { 'q': 'There are hand towels among the bath towels.', 'r': '', 'visible': false },
+            { 'q': 'There is a blender on the left side of the dishwasher.', 'r': '', 'visible': false },
+            { 'q': 'There are forks among the spoons.', 'r': '', 'visible': false },
+            { 'q': 'There are two faucets on the sink.', 'r': '', 'visible': false }
+          ]
+        }
+      ]
       'vocabulary': [
         { 'english': 'There is', 'translate': 'Há / existe' },
         { 'english': 'There are', 'translate': 'Há / existem' },
