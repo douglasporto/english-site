@@ -11,14 +11,14 @@ export const createDados = {
           { 'name': 'Lesson 2B', 'url': '/vocabulary?class=1' },
           { 'name': 'Lesson 3C', 'url': '/vocabulary?class=2' },
           { 'name': 'Lesson 2A', 'url': '/lesson?class=3' },
-          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=4' }
+          { 'name': 'Lesson 2B', 'url': '/lesson?class=4' }
         ]
       }
     ]
   },
   'classies': [
     {
-      'lesson': '1A',
+      'lesson': 'Unit 1A',
       'vocabulary': [
         { 'english': 'To sleep', 'translate': 'Dormir' },
         { 'english': 'To put (in/on)', 'translate': 'Colocar (dentro de/sobre)' },
@@ -53,7 +53,7 @@ export const createDados = {
       ]
     },
     {
-      'lesson': '1B',
+      'lesson': 'Unit 1B',
       'vocabulary': [
         { 'english': 'To clean', 'translate': 'Limpar/arrumar' },
         { 'english': 'To shave', 'translate': 'Barbear-se/depilar-se' },
@@ -91,7 +91,7 @@ export const createDados = {
       ]
     },
     {
-      'lesson': '1C',
+      'lesson': 'Unit 1C',
       'vocabulary': [
         { 'english': 'To cook (for)', 'translate': 'Cozinhar (para)' },
         { 'english': 'To wash (for)', 'translate': 'Lavar (para)' },
@@ -135,13 +135,13 @@ export const createDados = {
       ]
     },
     {
-      'lesson': '2A',
+      'lesson': 'Unit 2A',
       'homework': [
         {
           'lesson': 'B',
           'title': 'Answer the following questions according to what you see in the drawing on page 32:',
           'questions': [
-            { 'q': 'Is there toilet paper in the bathroom?', 'r': '', 'visible': false },
+            { 'q': 'Is there toilet paper in the bathroom?', 'r': 'aaa', 'visible': false },
             { 'q': 'Is there a sink in the bathroom?', 'r': '', 'visible': false },
             { 'q': 'Is there a toothbrush in the medicine cabinet?', 'r': '', 'visible': false },
             { 'q': 'Is there a bath towel in the bathroom?', 'r': '', 'visible': false },
@@ -173,7 +173,7 @@ export const createDados = {
             { 'q': 'There are two faucets on the sink.', 'r': '', 'visible': false }
           ]
         }
-      ]
+      ],
       'vocabulary': [
         { 'english': 'There is', 'translate': 'Há / existe' },
         { 'english': 'There are', 'translate': 'Há / existem' },
@@ -191,7 +191,7 @@ export const createDados = {
       ]
     },
     {
-      'lesson': '2B',
+      'lesson': 'Unit 2B',
       'homework': [
         {
           'lesson': 'B',
@@ -218,7 +218,7 @@ export const createDados = {
             { 'q': 'Where\'s is the hotel?', 'r': '', 'visible': false }
           ]
         }
-      ]
+      ],
       'vocabulary': [
         { 'english': 'Zoo', 'translate': 'Zoológico' },
         { 'english': 'Mall', 'translate': 'Centro de compras / shopping center' },

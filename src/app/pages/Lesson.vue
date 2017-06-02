@@ -16,7 +16,7 @@ export default {
       var voc
       this.vocabulary = []
       if (this.$route.query.class) {
-        this.title = 'Lessons ' + this.$store.state.classies[this.$route.query.class].lesson
+        this.title = 'Lesson ' + this.$store.state.classies[this.$route.query.class].lesson
         for (voc in this.$store.state.classies[this.$route.query.class].vocabulary) {
           this.vocabulary.unshift(this.$store.state.classies[this.$route.query.class].vocabulary[voc])
         }
@@ -66,15 +66,20 @@ export default {
                 <v-card>
                   <div class="v-card-content">
                     <div class="row homework" v-for="(obj, index) in homework">
-                      <div class="col s8 question">{{ index + 1}} ) {{ obj.translate }}</div>
-                      <div class="col s4">
-                        <v-switch
+                      <div class="col s12 question">
+                        <b>{{ obj.lesson }}) {{ obj.title }}</b>
+                      </div>
+                      <div v-for='(aux, index) in obj.questions' class="row questions">
+                        <div class="col s8">{{ index + 1}} ) {{ aux.q }}</div>
+                        <div class="col s4">
+                          <v-switch
                           on="Show answer"
                           off="Hide"
-                          v-model='obj.visible'
-                        ></v-switch>
+                          v-model='aux.visible'
+                          ></v-switch>
+                        </div>
+                        <div v-show="aux.visible" class="col s12 answer">{{ aux.r }}</div>
                       </div>
-                      <div v-show="obj.visible" class="col s12 answer">{{ obj.english }}</div>
                     </div>
                   </div>
                 </v-card>
@@ -151,12 +156,19 @@ i {
     background-color: #c5cae9;
 }
 .homework {
-  font-size: 28px;
+  font-size: 20px;
   padding: 20px;
-  border-bottom: solid 1px #bbdefb;
 }
 .answer {
   color: #c62828;
   padding-left: 50px !important;
+}
+.question {
+  padding-bottom: 20px !important;
+  color: blue;
+}
+.questions {
+  border-bottom: solid 1px #bbdefb;
+  padding: 20px !important;
 }
 </style>
