@@ -8,10 +8,11 @@ export const createDados = {
         'name': 'Dark Yellow',
         'menu': [
           { 'name': 'Lesson 1A', 'url': '/vocabulary?class=0' },
-          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=1' },
-          { 'name': 'Lesson 3C', 'url': '/vocabulary?class=2' },
+          { 'name': 'Lesson 1B', 'url': '/vocabulary?class=1' },
+          { 'name': 'Lesson 1C', 'url': '/vocabulary?class=2' },
           { 'name': 'Lesson 2A', 'url': '/lesson?class=3' },
-          { 'name': 'Lesson 2B', 'url': '/lesson?class=4' }
+          { 'name': 'Lesson 2B', 'url': '/lesson?class=4' },
+          { 'name': 'Lesson 2C', 'url': '/vocabulary?class=5' }
         ]
       }
     ]
@@ -247,8 +248,20 @@ export const createDados = {
         { 'english': 'Street (St.)', 'translate': 'Rua' },
         { 'english': 'Road (Rd.)', 'translate': 'Via / estrada' }
       ]
+    },
+    {
+      'lesson': 'Unit 2C',
+      'vocabulary': [
+        { 'english': 'to walk', 'translate': 'andar / caminhar' },
+        { 'english': 'to turn right', 'translate': 'virar à direita' },
+        { 'english': 'to turn left', 'translate': 'virar à esquerda' },
+        { 'english': 'to go straight', 'translate': 'ir em frente' },
+        { 'english': 'then', 'translate': 'então / depois' },
+        { 'english': 'again', 'translate': 'novamente / de novo' },
+        { 'english': 'block', 'translate': 'quadra' },
+        { 'english': 'just past', 'translate': 'passando por / pelo (a)' }
+      ]
     }
-
   ]
 }
 
