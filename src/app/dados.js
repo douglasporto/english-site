@@ -14,7 +14,7 @@ export const createDados = {
           { 'name': 'Lesson 2B', 'url': '/lesson?class=4' },
           { 'name': 'Lesson 2C', 'url': '/vocabulary?class=5' },
           { 'name': 'Lesson 3A', 'url': '/vocabulary?class=6' },
-          { 'name': 'Lesson 3B', 'url': '/vocabulary?class=7' }
+          { 'name': 'Lesson 3B', 'url': '/vocabulary?class=7' },
           { 'name': 'Lesson 3C', 'url': '/vocabulary?class=8' }
         ]
       }
