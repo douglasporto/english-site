@@ -12,7 +12,10 @@ export const createDados = {
           { 'name': 'Lesson 1C', 'url': '/vocabulary?class=2' },
           { 'name': 'Lesson 2A', 'url': '/lesson?class=3' },
           { 'name': 'Lesson 2B', 'url': '/lesson?class=4' },
-          { 'name': 'Lesson 2C', 'url': '/vocabulary?class=5' }
+          { 'name': 'Lesson 2C', 'url': '/vocabulary?class=5' },
+          { 'name': 'Lesson 3A', 'url': '/vocabulary?class=6' },
+          { 'name': 'Lesson 3B', 'url': '/vocabulary?class=7' }
+          { 'name': 'Lesson 3C', 'url': '/vocabulary?class=8' }
         ]
       }
     ]
@@ -261,6 +264,91 @@ export const createDados = {
         { 'english': 'block', 'translate': 'quadra' },
         { 'english': 'just past', 'translate': 'passando por / pelo (a)' }
       ]
+    },
+    {
+      'lesson': 'Unit 3A',
+      'vocabulary': [
+        { 'english': 'Hour', 'translate': 'Hora' },
+        { 'english': 'Minute', 'translate': 'Minuto' },
+        { 'english': 'Second', 'translate': 'Segundo' },
+        { 'english': 'Noon', 'translate': 'Meio-dia' },
+        { 'english': 'Midnight', 'translate': 'Meia-noite' },
+        { 'english': 'A.m. (ante-meridian)', 'translate': 'Antes do meio-dia' },
+        { 'english': 'P.m. (post-meridian)', 'translate': 'Após o meio-dia' },
+        { 'english': 'It\'s', 'translate': 'É / são' },
+        { 'english': 'At', 'translate': 'Às (para horas) / ao / à' },
+        { 'english': 'Until', 'translate': 'Até / até às / até ao' },
+        { 'english': 'Past', 'translate': 'Passado' },
+        { 'english': 'To', 'translate': 'Para' },
+        { 'english': 'Early', 'translate': 'Cedo / adiantado (a)' },
+        { 'english': 'Late', 'translate': 'Tarde / atrasado (a)' },
+        { 'english': 'Already', 'translate': 'Já' }
+      ]
+    },
+    {
+      'lesson': 'Unit 3B',
+      'vocabulary': [
+        { 'english': 'To buy (for)', 'translate': 'Comprar (para)' },
+        { 'english': 'To sell (to)', 'translate': 'Vender (para)' },
+        { 'english': 'To give (to)', 'translate': 'Dar (para)' },
+        { 'english': 'To pay', 'translate': 'Pagar' },
+        { 'english': 'To spend', 'translate': 'Gastar / passar (tempo)' },
+        { 'english': 'To rent', 'translate': 'Alugar' },
+        { 'english': 'To give away', 'translate': 'Dar / doar' },
+        { 'english': 'Cheap', 'translate': 'Barato (a)' },
+        { 'english': 'Expensive', 'translate': 'Caro (a)' },
+        { 'english': 'Present', 'translate': 'Presente' },
+        { 'english': 'Eraser', 'translate': 'Borracha / apagador' },
+        { 'english': 'Pen', 'translate': 'Caneta' },
+        { 'english': 'Pencil', 'translate': 'Lápis' },
+        { 'english': 'Paper', 'translate': 'Papel' },
+        { 'english': 'Notebook', 'translate': 'Caderno' },
+        { 'english': 'Flower', 'translate': 'Flor' },
+        { 'english': 'More', 'translate': 'Mais' },
+        { 'english': 'Some', 'translate': 'Algum(s) / alguma(s) / um pouco de' },
+        { 'english': 'Any', 'translate': 'Algum(s) / alguma(s) / um pouco de / nenhum(a)' },
+        { 'english': 'Bill', 'translate': 'Conta' },
+        { 'english': 'Check', 'translate': 'Conta (restaurante)' },
+        { 'english': 'Rent', 'translate': 'Aluguel' },
+        { 'english': 'Light', 'translate': 'Luz / leve / claro (a)' },
+        { 'english': 'Dark', 'translate': 'Escuro (a)' },
+        { 'english': 'Money', 'translate': 'Dinheiro' },
+        { 'english': 'Public', 'translate': 'Público (a)' },
+        { 'english': 'Private', 'translate': 'Particular' },
+        { 'english': 'For', 'translate': 'Para / por' },
+        { 'english': 'Tomorrow', 'translate': 'Amanhã' },
+        { 'english': 'Time', 'translate': 'Tempo' }
+      ]
+    },
+    {
+        'lesson': 'Unit 3C',
+        'vocabulary': [
+            { 'english': 'To cost', 'translate': 'Custar' },
+            { 'english': 'On sale', 'translate': 'Em promoção / liquidação / oferta' },
+            { 'english': 'For sale', 'translate': 'À venda' },
+            { 'english': 'Price', 'translate': 'Preço' },
+            { 'english': 'Coin', 'translate': 'Moeda' },
+            { 'english': 'Change', 'translate': 'Troco' },
+            { 'english': 'Which', 'translate': 'Qual / o (a) qual' },
+            { 'english': 'How many', 'translate': 'Quantos / quantas (contáveis)' },
+            { 'english': 'How much', 'translate': 'Quanto / quanta (incontáveis)' },
+            { 'english': 'To go shopping', 'translate': 'Fazer compras' },
+            { 'english': 'To pay cash', 'translate': 'Pagar em dinheiro / à vista' },
+            { 'english': 'To pay in installments', 'translate': 'Pagar em prestações' },
+            { 'english': 'Installment', 'translate': 'Prestação' },
+            { 'english': 'Color', 'translate': 'Cor' },
+            { 'english': 'White', 'translate': 'Branco' },
+            { 'english': 'Black', 'translate': 'Preto' },
+            { 'english': 'Blue', 'translate': 'Azul' },
+            { 'english': 'Green', 'translate': 'Verde' },
+            { 'english': 'Red', 'translate': 'Vermelho' },
+            { 'english': 'Yellow', 'translate': 'Amarelo' },
+            { 'english': 'Pink', 'translate': 'Cor de rosa' },
+            { 'english': 'Gray', 'translate': 'Cinza' },
+            { 'english': 'Purple', 'translate': 'Roxo / violeta' },
+            { 'english': 'Brown', 'translate': 'Marrom' },
+            { 'english': 'Orange', 'translate': 'Laranja / alaranjado' }
+        ]
     }
   ]
 }
