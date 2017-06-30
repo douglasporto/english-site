@@ -20,6 +20,14 @@ export default {
         for (voc in this.$store.state.classies[this.$route.query.class].vocabulary) {
           this.vocabulary.unshift(this.$store.state.classies[this.$route.query.class].vocabulary[voc])
         }
+      } else {
+        this.title = 'Review'
+        this.classies = this.$store.state.classies
+        for (var lesson in this.classies) {
+          for (voc in this.$store.state.classies[lesson].vocabulary) {
+            this.vocabulary.unshift(this.$store.state.classies[lesson].vocabulary[voc])
+          }
+        }
       }
       this.vocabulary = orderBy(this.vocabulary, ['english'], ['asc'])
       if (this.filtro) {
@@ -35,7 +43,11 @@ export default {
     }
   },
   created: function created () {
-    this.homework = this.$store.state.classies[this.$route.query.class].homework
+    if (this.$route.query.class) {
+      this.homework = this.$store.state.classies[this.$route.query.class].homework
+    } else {
+      this.homework = this.$store.state.review
+    }
   }
 }
 </script>
@@ -57,7 +69,8 @@ export default {
                   <div class="v-card-content">
                     <v-tabs>
                       <v-tab target="#Vocabulary">Vocabulary</v-tab>
-                      <v-tab target="#homework">Homework</v-tab>
+                      <v-tab target="#homework" v-if="title === 'Review'">Lesson Review</v-tab>
+                      <v-tab target="#homework" v-else>Homework</v-tab>
                     </v-tabs>
                   </div>
                 </v-card>
@@ -67,7 +80,7 @@ export default {
                   <div class="v-card-content">
                     <div class="row homework" v-for="(obj, index) in homework">
                       <div class="col s12 question">
-                        <b>{{ obj.lesson }}) {{ obj.title }}</b>
+                        <b><div v-if="obj.lesson">{{ obj.lesson }})</div>{{ obj.title }}</b>
                       </div>
                       <div v-for='(aux, index) in obj.questions' class="row questions">
                         <div class="col s8">{{ index + 1}} ) {{ aux.q }}</div>
@@ -78,7 +91,7 @@ export default {
                           v-model='aux.visible'
                           ></v-switch>
                         </div>
-                        <div v-show="aux.visible" class="col s12 answer">{{ aux.r }}</div>
+                        <div v-show="aux.visible" class="col s12 answer" v-html="aux.r"></div>
                       </div>
                     </div>
                   </div>
@@ -138,14 +151,6 @@ i {
 .switch {
   font-size: 10px;
 }
-@media only screen and (max-width: 1200px) {
-  .text-vocabulary {
-    font-size: 28px;
-  }
-  html {
-    font-size: 18px;
-  }
-}
 .tabs .tab a {
     color: #5c6bc0;
 }
@@ -156,7 +161,6 @@ i {
     background-color: #c5cae9;
 }
 .homework {
-  font-size: 20px;
   padding: 20px;
 }
 .answer {

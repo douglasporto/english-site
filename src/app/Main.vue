@@ -24,6 +24,7 @@ export default {
   components: { MainNav },
   created: function created () {
     this.$store.state.site = dados.site
+    this.$store.state.review = dados.review
     this.$store.state.classies = dados.classies
   }
 }

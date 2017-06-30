@@ -110,12 +110,4 @@ i {
 .switch {
   font-size: 10px;
 }
-@media only screen and (max-width: 1200px) {
-  .text-vocabulary {
-    font-size: 28px;
-  }
-  html {
-    font-size: 18px;
-  }
-}
 </style>

@@ -3,7 +3,7 @@ export const createDados = {
     'name': 'English Class',
     'slug': 'english',
     'pages': [
-      { 'name': 'Vocabulary', 'url': '/vocabulary' },
+      { 'name': 'Review', 'url': '/lesson' },
       {
         'name': 'Dark Yellow',
         'menu': [
@@ -15,11 +15,70 @@ export const createDados = {
           { 'name': 'Lesson 2C', 'url': '/vocabulary?class=5' },
           { 'name': 'Lesson 3A', 'url': '/vocabulary?class=6' },
           { 'name': 'Lesson 3B', 'url': '/vocabulary?class=7' },
-          { 'name': 'Lesson 3C', 'url': '/vocabulary?class=8' }
+          { 'name': 'Lesson 3C', 'url': '/vocabulary?class=8' },
+          { 'name': 'Lesson 4A', 'url': '/vocabulary?class=9' },
+          { 'name': 'Lesson 4B', 'url': '/vocabulary?class=10' }
         ]
       }
     ]
   },
+  'review': [
+    {
+      'title': 'Translate the following sentences into English and rewrite them with each substitution:',
+      'questions': [
+        { 'q': 'EU ESTOU COM FOME. VOCÊ PODERIA COZINHAR PARA MIM? (PARA NÓS)', 'r': 'I\'M HUNGRY. COULD YOU COOK FOR ME?<br> I\'M HUNGRY. COULD YOU COOK FOR US?', 'visible': false },
+        { 'q': 'ONDE VOCÊ QUER COLOCAR O LENÇOL? (COBERTOR / TRAVESSEIRO / FRONHA)', 'r': 'WHERE DO YOU WANT TO PUT THE SHEET?<br> WHERE DO YOU WANT TO PUT THE BLANKET?<br> WHERE DO YOU WANT TO PUT THE PILLOW?<br> WHERE DO YOU WANT TO PUT THE PILLOWCASE?', 'visible': false },
+        { 'q': 'ELA NÃO GOSTA DE LAVAR A FRIGIDEIRA. (PANELA / ASSADEIRA / A LOUÇA)', 'r': 'SHE DOESN\'T LIKE TO WASH THE FRYING PAN.<br> SHE DOESN\'T LIKE TO WASH THE PAN.<br> SHE DOESN\'T LIKE TO WASH THE BAKING PAN.<br> SHE DOESN\'T LIKE TO WASH THE DISHES.', 'visible': false },
+        { 'q': 'EU PRECISO COMPRAR CREME APÓS BARBA. (CREME DE BARBEAR / LÂMINA DE BARBEAR)', 'r': 'I NEED TO BUY AFTER SHAVE.<br> I NEED TO BUY SHAVING CREAM.<br> I NEED TO BUY A RAZOR.', 'visible': false },
+        { 'q': 'VOCÊ PREFERE TOMAR BANHO DE BANHEIRA OU DE CHUVEIRO? (ELA / ELE / ELES)', 'r': 'DO YOU PREFER TO TAKE A BATH OR TO TAKE A SHOWER?<br> DOES SHE PREFER TO TAKE A BATH OR TO TAKE A SHOWER?<br> DOES HE PREFER TO TAKE A BATH OR TO TAKE A SHOWER?<br> DO THEY PREFER TO TAKE A BATH OR TO TAKE A SHOWER?', 'visible': false },
+        { 'q': 'HÁ UM CARRO EM FRENTE À NOSSA ESCOLA. (ATRÁS DE / AO LADO DE / DO OUTRO LADO DA RUA)', 'r': 'THERE IS A CAR IN FRONT OF OUR SCHOOL.<br> THERE IS A CAR BEHIND OUR SCHOOL.<br> THERE IS A CAR BESIDE OUR SCHOOL.<br> THERE IS A CAR ACROSS FROM OUR SCHOOL.', 'visible': false },
+        { 'q': 'ONDE É O MUSEU? (TEATRO / PREFEITURA / DELEGACIA)', 'r': 'WHERE IS THE MUSEUM?<br> WHERE IS THE THEATER?<br> WHERE IS THE CITY HALL?<br> WHERE IS THE POLICE STATION?', 'visible': false },
+        { 'q': 'ELE GOSTA DE ANDAR DE MANHÃ. (DE TARDE / À NOITE)', 'r': 'HE LIKES TO WALK IN THE MORNING.<br> HE LIKES TO WALK IN THE AFTERNOON.<br> HE LIKES TO WALK AT NIGHT.', 'visible': false },
+        { 'q': 'ELA QUER ALUGAR SUA (DELA) CASA NOVAMENTE. (ELE DELE / NÓS NOSSA / ELES DELES)', 'r': 'SHE WANTS TO RENT HER HOUSE AGAIN.<br> HE WANTS TO RENT HIS HOUSE AGAIN.<br> WE WANT TO RENT OUR HOUSE AGAIN.<br> THEY WANT TO RENT THEIR HOUSE AGAIN.', 'visible': false },
+        { 'q': 'QUANTO CUSTA ESTA CAMISA VERMELHA? (AZUL / BRANCA / PRETA)', 'r': 'HOW MUCH DOES THIS RED SHIRT COST?<br> HOW MUCH DOES THIS BLUE SHIRT COST?<br> HOW MUCH DOES THIS WHITE SHIRT COST?<br> HOW MUCH DOES THIS BLACK SHIRT COST?', 'visible': false },
+        { 'q': 'POSSO TE LIGAR NA SEGUNDA? (TERÇA / SEXTA / SÁBADO)', 'r': 'CAN I CALL YOU ON MONDAY?<br> CAN I CALL YOU ON TUESDAY?<br> CAN I CALL YOU ON FRIDAY?<br> CAN I CALL YOU ON SATURDAY?', 'visible': false },
+        { 'q': 'VOCÊ QUER ENVIAR ESTE EMAIL PARA SEU PAI, TAMBÉM? (MENSAGEM / PACOTE)', 'r': 'DO YOU WANT TO SEND THIS EMAIL TO YOUR FATHER TOO?<br> DO YOU WANT TO SEND THIS MESSAGE TO YOUR FATHER TOO?<br> DO YOU WANT TO SEND THIS PACKAGE TO YOUR FATHER TOO?<br>', 'visible': false },
+        { 'q': 'VOCÊ PODE ME EXPLICAR ISTO? (A ELA / A ELE / A ELES)', 'r': 'CAN YOU EXPLAIN THIS TO ME?<br>CAN YOU EXPLAIN THIS TO HER?<br>CAN YOU EXPLAIN THIS TO HIM?<br>CAN YOU EXPLAIN THIS TO THEM?', 'visible': false },
+        { 'q': 'ELA GERALMENTE VAI À ESCOLA A PÉ. (NUNCA / RARAMENTE / QUASE NUNCA)', 'r': 'SHE USUALLY GOES TO SCHOOL ON FOOT.<br> SHE NEVER GOES TO SCHOOL ON FOOT.<br> SHE SELDOM GOES TO SCHOOL ON FOOT.<br> SHE HARDLY EVER GOES TO SCHOOL ON FOOT.', 'visible': false },
+        { 'q': 'VOCÊ GERALMENTE PENTEIA OU ESCOVA SEU CABELO? (ELE DELE / ELES DELES)', 'r': 'DO YOU USUALLY COMB OR BRUSH YOUR HAIR?<br> DOES HE USUALLY COMB OR BRUSH HIS HAIR?<br> DO THEY USUALLY COMB OR BRUSH THEIR HAIR?', 'visible': false },
+        { 'q': 'VOCÊ PODERIA LAVAR A TOALHA DE ROSTO? (TOALHA DE BANHO / MINHAS ROUPAS)', 'r': 'COULD YOU WASH THE HAND TOWEL?<br> COULD YOU WASH THE BATH TOWEL?<br> COULD YOU WASH MY CLOTHES?', 'visible': false },
+        { 'q': 'HÁ MUITAS PESSOAS NO MEIO DA RUA. (NA FRENTE DO POSTO DE GASOLINA / EMBAIXO DA ÁRVORE)', 'r': 'THERE ARE MANY PEOPLE IN THE MIDDLE OF THE STREET.<br> THERE ARE MANY PEOPLE IN FRONT OF THE GAS STATION.<br> THERE ARE MANY PEOPLE UNDER THE TREE.', 'visible': false },
+        { 'q': 'ONDE É A BANCA DE JORNAL? DO LADO DIREITO. (DO LADO ESQUERDO)', 'r': 'WHERE IS THE NEWSSTAND? ON THE RIGHT HAND SIDE.<br> WHERE IS THE NEWSSTAND? ON THE LEFT HAND SIDE.', 'visible': false },
+        { 'q': 'ONDE É O POSTO DE GASOLINA? ANDE DUAS QUADRAS E VIRE À ESQUERDA. (DIREITA)', 'r': 'WHERE IS THE GAS STATION? WALK (FOR) TWO BLOCKS AND TURN LEFT.<br> WHERE IS THE GAS STATION? WALK (FOR) TWO BLOCKS AND TURN RIGHT.', 'visible': false },
+        { 'q': 'QUE HORAS SÃO? JÁ SÃO 7:00. (3:30 PM / 12:00 AM / 8:45 AM / 2:05 PM / 12:00 PM)', 'r': 'WHAT TIME IS IT? IT\'S ALREADY SEVEN O\'CLOCK.<br> WHAT TIME IS IT? IT\'S ALREADY THREE THIRTY PM.<br> WHAT TIME IS IT? IT\'S ALREADY (TWELVE) MIDNIGHT.<br> WHAT TIME IS IT? IT\'S ALREADY EIGHT FORTY-FIVE AM.<br> WHAT TIME IS IT? IT\'S ALREADY TWO-OH-FIVE PM.<br> WHAT TIME IS IT? IT\'S ALREADY (TWELVE) NOON.', 'visible': false },
+        { 'q': 'COMO VOCÊ QUER PAGAR? À VISTA. (ELA / ELE / ELES)', 'r': 'HOW DO YOU WANT TO PAY? CASH.<br> HOW DOES SHE WANT TO PAY? CASH.<br> HOW DOES HE WANT TO PAY? CASH.<br> HOW DO THEY WANT TO PAY? CASH.', 'visible': false },
+        { 'q': 'ELES NÃO CONSEGUEM CANTAR. E VOCÊ? (MERGULHAR / NADAR / COZINHAR)', 'r': 'THEY CAN\'T SING. AND YOU? / WHAT ABOUT YOU?<br> THEY CAN\'T DIVE. AND YOU? / WHAT ABOUT YOU?<br> THEY CAN\'T SWIM. AND YOU? / WHAT ABOUT YOU?<br> THEY CAN\'T COOK. AND YOU? / WHAT ABOUT YOU?', 'visible': false },
+        { 'q': 'EU QUERO TE PEDIR UM FAVOR. (NÓS / ELES / ELA)', 'r': 'I WANT TO ASK YOU A FAVOR.<br> WE WANT TO ASK YOU A FAVOR.<br> THEY WANT TO ASK YOU A FAVOR.<br> SHE WANTS TO ASK YOU A FAVOR.', 'visible': false },
+        { 'q': 'VOCÊ PODERIA LIGAR PARA ELA? (PARA ELE / PARA ELES / PARA MINHA MÃE)', 'r': 'COULD YOU CALL HER?<br> COULD YOU CALL HIM?<br> COULD YOU CALL THEM?<br> COULD YOU CALL MY MOTHER?', 'visible': false },
+        { 'q': 'EU TENHO QUE COMPRAR UM FORNO NOVO. (FOGÃO / GELADEIRA / MICROONDAS)', 'r': 'I HAVE TO BUY A NEW OVEN.<br> I HAVE TO BUY A NEW STOVE.<br> I HAVE TO BUY A NEW FRIDGE.<br> I HAVE TO BUY A NEW MICROWAVE.', 'visible': false },
+        { 'q': 'MEXA A SOPA PARA MIM, POR FAVOR. (SUCO)', 'r': 'STIR THE SOUP FOR ME, PLEASE.<br> STIR THE JUICE FOR ME, PLEASE.', 'visible': false },
+        { 'q': 'VOCÊ TEM QUE RESPONDER ESTAS PERGUNTAS. (ELA / ELE / NÓS)', 'r': 'YOU HAVE TO ANSWER THESE QUESTIONS.<br> SHE HAS TO ANSWER THESE QUESTIONS.<br> HE HAS TO ANSWER THESE QUESTIONS.<br> WE HAVE TO ANSWER THESE QUESTIONS.', 'visible': false },
+        { 'q': 'VOCÊ PREFERE FRITAR OU ASSAR O FRANGO? (A CARNE / AS BATATAS)', 'r': 'DO YOU PREFER TO FRY OR BAKE THE CHICKEN?<br> DO YOU PREFER TO FRY OR BAKE THE MEAT?<br> DO YOU PREFER TO FRY OR BAKE THE POTATOES?', 'visible': false },
+        { 'q': 'VOCÊ PODERIA FERVER UM POUCO DE ÁGUA PARA MIM? (PARA ELA / PARA NÓS)', 'r': 'COULD YOU BOIL A LITTLE WATER FOR ME?<br> COULD YOU BOIL A LITTLE WATER FOR HER?<br> COULD YOU BOIL A LITTLE WATER FOR US?', 'visible': false },
+        { 'q': 'POR QUE VOCÊ NÃO CORTA ESTAS BATATAS? (ELA / ELE)', 'r': 'WHY DON\'T YOU CUT THESE POTATOES?<br> WHY DOESN\'T SHE CUT THESE POTATOES?<br> WHY DOESN\'T HE CUT THESE POTATOES?', 'visible': false },
+        { 'q': 'PEÇA PARA A EMPREGADA LIMPAR MEU QUARTO, POR FAVOR. (A COZINHA / A SALA)', 'r': 'ASK THE MAID TO CLEAN MY BEDROOM / ROOM, PLEASE.<br> ASK THE MAID TO CLEAN THE KITCHEN, PLEASE.<br> ASK THE MAID TO CLEAN THE LIVING ROOM, PLEASE.', 'visible': false },
+        { 'q': 'EU PRECISO APRENDER A MERGULHAR. (NADAR / SURFAR)', 'r': 'I NEED TO LEARN HOW TO DIVE.<br> I NEED TO LEARN HOW TO SWIM.<br> I NEED TO LEARN HOW TO SURF.', 'visible': false },
+        { 'q': 'MINHA IRMÃ PINTA MUITO BEM. (MEU PRIMO / MINHA NORA / MEU SOGRO)', 'r': 'MY SISTER PAINTS VERY WELL.<br> MY COUSIN PAINTS VERY WELL.<br> MY DAUGHTER-IN-LAW PAINTS VERY WELL.<br> MY FATHER-IN-LAW PAINTS VERY WELL.', 'visible': false },
+        { 'q': 'VOCÊ NÃO PRECISA EXPLICAR ISTO PARA MIM. (ELA / ELE / ELES)', 'r': 'YOU DON\'T NEED TO EXPLAIN THIS TO ME. <br> YOU DON\'T NEED TO EXPLAIN THIS TO HER.<br> YOU DON\'T NEED TO EXPLAIN THIS TO HIM. <br> YOU DON\'T NEED TO EXPLAIN THIS TO THEM.', 'visible': false },
+        { 'q': 'ONDE VOCÊ GUARDA O LIQUIDIFICADOR? (BATEDEIRA / PANELA DE PRESSÃO / TALHERES)', 'r': 'WHERE DO YOU KEEP THE BLENDER?<br> WHERE DO YOU KEEP THE MIXER?<br> WHERE DO YOU KEEP THE PRESSURE COOKER?<br> WHERE DO YOU KEEP THE SILVERWARE?', 'visible': false },
+        { 'q': 'EU GERALMENTE FAÇO A BARBA DE MANHÃ. (MEU PAI / MEU SOGRO / VOCÊ)', 'r': 'I USUALLY SHAVE IN THE MORNING.<br> MY FATHER USUALLY SHAVES IN THE MORNING.<br> MY FATHER-IN-LAW USUALLY SHAVES IN THE MORNING.<br> YOU USUALLY SHAVE IN THE MORNING.', 'visible': false },
+        { 'q': 'MOSTRE-ME O DINHEIRO. (A ELA / A ELE / A ELES)', 'r': 'SHOW ME THE MONEY.<br> SHOW HER THE MONEY.<br> SHOW HIM THE MONEY.<br> SHOW THEM THE MONEY.', 'visible': false },
+        { 'q': 'EU RARAMENTE ASSISTO TV À NOITE. (QUASE NUNCA / ALGUMAS VEZES)', 'r': 'I SELDOM WATCH TV AT NIGHT.<br> I HARDLY EVER WATCH TV AT NIGHT.<br> I SOMETIMES WATCH TV AT NIGHT.', 'visible': false },
+        { 'q': 'O TELEFONE ESTÁ TOCANDO. VOCÊ PODE ATENDER PARA MIM? (PODERIA)', 'r': 'THE TELEPHONE IS RINGING. CAN YOU ANSWER IT FOR ME?<br> THE TELEPHONE IS RINGING. COULD YOU ANSWER IT FOR ME?', 'visible': false },
+        { 'q': 'QUANTAS CARTAS VOCÊ PRECISA ENVIAR? (ESCREVER / LER / LEVAR AO CORREIO)', 'r': 'HOW MANY LETTERS DO YOU NEED TO SEND?<br> HOW MANY LETTERS DO YOU NEED TO WRITE?<br> HOW MANY LETTERS DO YOU NEED TO READ?<br> HOW MANY LETTERS DO YOU NEED TO TAKE TO THE POST OFFICE?', 'visible': false },
+        { 'q': 'EU POSSO DIRIGIR SEU CARRO? (MOTO)', 'r': 'CAN I DRIVE YOUR CAR?<br> CAN I RIDE YOUR MOTORCYCLE?', 'visible': false },
+        { 'q': 'EU GOSTO DE OUVIR MÚSICA EM MEU QUARTO. (ELA DELA / ELE DELE / NÓS NOSSO)', 'r': 'I LIKE TO LISTEN TO MUSIC IN MY BEDROOM / ROOM.<br> SHE LIKES TO LISTEN TO MUSIC IN HER BEDROOM / ROOM.<br> HE LIKES TO LISTEN TO MUSIC IN HIS BEDROOM / ROOM.<br> WE LIKE TO LISTEN TO MUSIC IN OUR BEDROOM / ROOM.', 'visible': false },
+        { 'q': 'ELA PREFERE TIRAR UMA SONECA NO SOFÁ. (POLTRONA / CAMA)', 'r': 'SHE PREFERS TO TAKE A NAP ON THE COUCH.<br> SHE PREFERS TO TAKE A NAP IN THE ARMCHAIR.<br> SHE PREFERS TO TAKE A NAP IN BED / ON THE BED.', 'visible': false },
+        { 'q': 'EU ESTOU COM FOME. VOCÊ PODE FAZER UM BOLO DE CHOCOLATE PARA MIM?', 'r': 'I\'M HUNGRY. CAN YOU MAKE A CHOCOLATE CAKE FOR ME? / CAN YOU MAKE ME A CHOCOLATE CAKE?', 'visible': false },
+        { 'q': 'ABRA ESTA LATA PARA ELA COM ESTE NOVO ABRIDOR. (PARA ELE / PARA NÓS)', 'r': 'OPEN THIS CAN FOR HER WITH THIS NEW OPENER.<br> OPEN THIS CAN FOR HIM WITH THIS NEW OPENER.<br> OPEN THIS CAN FOR US WITH THIS NEW OPENER.', 'visible': false },
+        { 'q': 'VOCÊ PODERIA ME TELEFONAR ÀS 20:00? (MEIO-DIA / 07:30 / 13:15)', 'r': 'COULD YOU CALL ME AT EIGHT PM / EIGHT O\'CLOCK?<br> COULD YOU CALL ME AT (TWELVE) NOON / TWELVE O\'CLOCK?<br> COULD YOU CALL ME AT SEVEN THIRTY AM / HALF PAST SEVEN?<br> COULD YOU CALL ME AT ONE FIFTEEN PM / A QUARTER PAST ONE?', 'visible': false },
+        { 'q': 'PERGUNTE A ELE: VOCÊ GOSTA DE CORRER? (A ELA / A ELES)', 'r': 'ASK HIM: DO YOU LIKE TO RUN?<br> ASK HER: DO YOU LIKE TO RUN?<br> ASK THEM: DO YOU LIKE TO RUN?', 'visible': false },
+        { 'q': 'E VOCÊ? VOCÊ PODE ME AJUDAR? (FALAR INGLÊS / COZINHAR)', 'r': 'AND YOU? / WHAT ABOUT YOU? CAN YOU HELP ME?<br> AND YOU? / WHAT ABOUT YOU? CAN YOU SPEAK ENGLISH?<br> AND YOU? / WHAT ABOUT YOU? CAN YOU COOK?', 'visible': false },
+        { 'q': 'HÁ UMA CAMISA LIMPA PARA VOCÊ NO GUARDA-ROUPA.', 'r': 'THERE IS A CLEAN SHIRT FOR YOU IN THE CLOSET / WARDROBE.', 'visible': false },
+        { 'q': 'HÁ DOIS GATOS NA ENTRADA DA GARAGEM. (TRÊS / UM / QUATRO)', 'r': 'THERE ARE TWO CATS ON THE DRIVEWAY.<br> THERE ARE THREE CATS ON THE DRIVEWAY.<br> THERE IS ONE CAT ON THE DRIVEWAY.<br> THERE ARE FOUR CATS ON THE DRIVEWAY.', 'visible': false }
+      ]
+    }
+  ],
   'classies': [
     {
       'lesson': 'Unit 1A',
@@ -321,34 +380,84 @@ export const createDados = {
       ]
     },
     {
-        'lesson': 'Unit 3C',
-        'vocabulary': [
-            { 'english': 'To cost', 'translate': 'Custar' },
-            { 'english': 'On sale', 'translate': 'Em promoção / liquidação / oferta' },
-            { 'english': 'For sale', 'translate': 'À venda' },
-            { 'english': 'Price', 'translate': 'Preço' },
-            { 'english': 'Coin', 'translate': 'Moeda' },
-            { 'english': 'Change', 'translate': 'Troco' },
-            { 'english': 'Which', 'translate': 'Qual / o (a) qual' },
-            { 'english': 'How many', 'translate': 'Quantos / quantas (contáveis)' },
-            { 'english': 'How much', 'translate': 'Quanto / quanta (incontáveis)' },
-            { 'english': 'To go shopping', 'translate': 'Fazer compras' },
-            { 'english': 'To pay cash', 'translate': 'Pagar em dinheiro / à vista' },
-            { 'english': 'To pay in installments', 'translate': 'Pagar em prestações' },
-            { 'english': 'Installment', 'translate': 'Prestação' },
-            { 'english': 'Color', 'translate': 'Cor' },
-            { 'english': 'White', 'translate': 'Branco' },
-            { 'english': 'Black', 'translate': 'Preto' },
-            { 'english': 'Blue', 'translate': 'Azul' },
-            { 'english': 'Green', 'translate': 'Verde' },
-            { 'english': 'Red', 'translate': 'Vermelho' },
-            { 'english': 'Yellow', 'translate': 'Amarelo' },
-            { 'english': 'Pink', 'translate': 'Cor de rosa' },
-            { 'english': 'Gray', 'translate': 'Cinza' },
-            { 'english': 'Purple', 'translate': 'Roxo / violeta' },
-            { 'english': 'Brown', 'translate': 'Marrom' },
-            { 'english': 'Orange', 'translate': 'Laranja / alaranjado' }
-        ]
+      'lesson': 'Unit 3C',
+      'vocabulary': [
+        { 'english': 'To cost', 'translate': 'Custar' },
+        { 'english': 'On sale', 'translate': 'Em promoção / liquidação / oferta' },
+        { 'english': 'For sale', 'translate': 'À venda' },
+        { 'english': 'Price', 'translate': 'Preço' },
+        { 'english': 'Coin', 'translate': 'Moeda' },
+        { 'english': 'Change', 'translate': 'Troco' },
+        { 'english': 'Which', 'translate': 'Qual / o (a) qual' },
+        { 'english': 'How many', 'translate': 'Quantos / quantas (contáveis)' },
+        { 'english': 'How much', 'translate': 'Quanto / quanta (incontáveis)' },
+        { 'english': 'To go shopping', 'translate': 'Fazer compras' },
+        { 'english': 'To pay cash', 'translate': 'Pagar em dinheiro / à vista' },
+        { 'english': 'To pay in installments', 'translate': 'Pagar em prestações' },
+        { 'english': 'Installment', 'translate': 'Prestação' },
+        { 'english': 'Color', 'translate': 'Cor' },
+        { 'english': 'White', 'translate': 'Branco' },
+        { 'english': 'Black', 'translate': 'Preto' },
+        { 'english': 'Blue', 'translate': 'Azul' },
+        { 'english': 'Green', 'translate': 'Verde' },
+        { 'english': 'Red', 'translate': 'Vermelho' },
+        { 'english': 'Yellow', 'translate': 'Amarelo' },
+        { 'english': 'Pink', 'translate': 'Cor de rosa' },
+        { 'english': 'Gray', 'translate': 'Cinza' },
+        { 'english': 'Purple', 'translate': 'Roxo / violeta' },
+        { 'english': 'Brown', 'translate': 'Marrom' },
+        { 'english': 'Orange', 'translate': 'Laranja / alaranjado' }
+      ]
+    },
+    {
+      'lesson': 'Unit 4A',
+      'vocabulary': [
+        { 'english': 'Can', 'translate': 'Poder / conseguir (fazer algo) /  ter habilidade ou' },
+        { 'english': 'Can\'t', 'translate': 'Forma negativa do "can" (não poder...)' },
+        { 'english': 'To run', 'translate': 'Correr' },
+        { 'english': 'To drive', 'translate': 'Dirigir / ir de carro' },
+        { 'english': 'To ride a horse', 'translate': 'Andar à cavalo' },
+        { 'english': 'To ride a bicycle', 'translate': 'Andar de bicicleta' },
+        { 'english': 'To dive', 'translate': 'Mergulhar' },
+        { 'english': 'To surf', 'translate': 'Surfar' },
+        { 'english': 'To paint', 'translate': 'Pintar' },
+        { 'english': 'To sing', 'translate': 'Cantar' },
+        { 'english': 'Football', 'translate': 'Futebol americano' },
+        { 'english': 'Baseball', 'translate': 'Beisebol' },
+        { 'english': 'Golf', 'translate': 'Golfe' },
+        { 'english': 'Too', 'translate': 'Também / demais (quando antes de adjetivo)' },
+        { 'english': 'Also', 'translate': 'Também' },
+        { 'english': 'Either', 'translate': 'Também (frases negativas)' },
+        { 'english': 'What about', 'translate': 'E (para perguntar sobre algo)' }
+      ]
+    },
+    {
+      'lesson': 'Unit 4B',
+      'vocabulary': [
+          { 'english': 'Could', 'translate': 'Poderia / podia / pôde' },
+          { 'english': 'Couldn\'t', 'translate': 'Não poderia / não podia / não pôde' },
+          { 'english': 'To call', 'translate': 'Ligar para / chamar' },
+          { 'english': 'To show', 'translate': 'Mostrar / passar no cinema, TV, etc' },
+          { 'english': 'To ask', 'translate': 'Perguntar / pedir (a alguém)' },
+          { 'english': 'To ask for', 'translate': 'Pedir' },
+          { 'english': 'To answer', 'translate': 'Responder' },
+          { 'english': 'To explain', 'translate': 'Explicar' },
+          { 'english': 'To send', 'translate': 'Enviar / mandar' },
+          { 'english': 'To ring', 'translate': 'Tocar' },
+          { 'english': 'Question', 'translate': 'Questão / pergunta' },
+          { 'english': 'Message', 'translate': 'Mensagem' },
+          { 'english': 'Package', 'translate': 'Pacote' },
+          { 'english': 'Favor', 'translate': 'Favor' },
+          { 'english': 'Just', 'translate': 'Apenas / só / justo (a)' },
+          { 'english': 'Me', 'translate': 'Mim / me' },
+          { 'english': 'You', 'translate': 'Lhe / te / você' },
+          { 'english': 'Him', 'translate': 'Lhe / o / ele' },
+          { 'english': 'Her', 'translate': 'Lhe / a / ela' },
+          { 'english': 'It', 'translate': 'Lhe (neutro)' },
+          { 'english': 'Us', 'translate': 'Nos / nós' },
+          { 'english': 'You', 'translate': 'Lhes / vocês' },
+          { 'english': 'Them', 'translate': 'Os / as / los / las' }
+      ]
     }
   ]
 }
