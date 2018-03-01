@@ -19,6 +19,7 @@ import MainNav from './Header'
 // import http from 'src/http'
 // import { Jogador } from './Jogadores'
 import dados from './dados.js'
+import verbs from './irregularverbs.js'
 export default {
   name: 'app',
   components: { MainNav },
@@ -26,6 +27,7 @@ export default {
     this.$store.state.site = dados.site
     this.$store.state.review = dados.review
     this.$store.state.classies = dados.classies
+    this.$store.state.verbs = verbs
   }
 }
 </script>

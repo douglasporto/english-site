@@ -5,6 +5,9 @@ import App from './app/Main'
 import router from './router'
 import Materials from 'vue-materials'
 import store from './store/store'
+import VueTyperPlugin from 'vue-typer'
+
+Vue.use(VueTyperPlugin)
 Vue.use(Materials)
 
 Vue.config.productionTip = false

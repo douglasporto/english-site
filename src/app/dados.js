@@ -17,7 +17,22 @@ export const createDados = {
           { 'name': 'Lesson 3B', 'url': '/vocabulary?class=7' },
           { 'name': 'Lesson 3C', 'url': '/vocabulary?class=8' },
           { 'name': 'Lesson 4A', 'url': '/vocabulary?class=9' },
-          { 'name': 'Lesson 4B', 'url': '/vocabulary?class=10' }
+          { 'name': 'Lesson 4B', 'url': '/vocabulary?class=10' },
+          { 'name': 'Lesson 4C', 'url': '/vocabulary?class=11' }
+        ]
+      },
+      {
+        'name': 'Orange',
+        'menu': [
+          { 'name': 'Lesson 1A', 'url': '/vocabulary?class=12' },
+          { 'name': 'Lesson 1B', 'url': '/vocabulary?class=13' },
+          { 'name': 'Lesson 1C', 'url': '/vocabulary?class=14' },
+          { 'name': 'Lesson 2A', 'url': '/vocabulary?class=15' },
+          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=16' },
+          { 'name': 'Lesson 2C', 'url': '/vocabulary?class=17' },
+          { 'name': 'Lesson 2D', 'url': '/vocabulary?class=18' },
+          { 'name': 'Lesson 3A', 'url': '/vocabulary?class=19' },
+          { 'name': 'Lesson 3B', 'url': '/vocabulary?class=20' }
         ]
       }
     ]
@@ -457,6 +472,230 @@ export const createDados = {
           { 'english': 'Us', 'translate': 'Nos / nós' },
           { 'english': 'You', 'translate': 'Lhes / vocês' },
           { 'english': 'Them', 'translate': 'Os / as / los / las' }
+      ]
+    },
+    {
+      'lesson': 'Unit 4C',
+      'vocabulary': [
+          { 'english': 'Seldom', 'translate': 'Raramente' },
+          { 'english': 'Ever', 'translate': 'Alguma vez' },
+          { 'english': 'Hardly ever', 'translate': 'Quase nunca' },
+          { 'english': 'Once', 'translate': 'Uma vez' },
+          { 'english': 'Twice', 'translate': 'Duas vezes' },
+          { 'english': 'Times', 'translate': 'Vezes' },
+          { 'english': 'Three times', 'translate': 'Três vezes' },
+          { 'english': 'Four times', 'translate': 'Quatro vezes' },
+          { 'english': 'A day', 'translate': 'Por dia' },
+          { 'english': 'A week', 'translate': 'Por semana' },
+          { 'english': 'A month', 'translate': 'Por mês' },
+          { 'english': 'A year', 'translate': 'Por ano' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 1A',
+      'vocabulary': [
+          { 'english': 'To remember', 'translate': 'Lembrar-se de' },
+          { 'english': 'To forget (about)', 'translate': 'Esquecer (de)' },
+          { 'english': 'To start', 'translate': 'Começar' },
+          { 'english': 'To finish', 'translate': 'Terminar' },
+          { 'english': 'To lose', 'translate': 'Perder' },
+          { 'english': 'To find', 'translate': 'Encontrar' },
+          { 'english': 'To look for', 'translate': 'Procurar' },
+          { 'english': 'Document', 'translate': 'Documento' },
+          { 'english': 'Key', 'translate': 'Chave' },
+          { 'english': 'Office', 'translate': 'Escritório' },
+          { 'english': 'Desk', 'translate': 'Mesa de escritório / escrivaninha' },
+          { 'english': 'Another', 'translate': 'Outro (a)' },
+          { 'english': 'Other', 'translate': 'Outros (as)' },
+          { 'english': 'Before', 'translate': 'Antes de' },
+          { 'english': 'After', 'translate': 'Depois de' },
+          { 'english': 'Course', 'translate': 'Curso' },
+          { 'english': 'Job', 'translate': 'Emprego' },
+          { 'english': 'Ride', 'translate': 'Carona' },
+          { 'english': 'Worried', 'translate': 'Preocupado (a)' },
+          { 'english': 'Yesterday', 'translate': 'Ontem' },
+          { 'english': 'Yesterday morning', 'translate': 'Ontem de manhã' },
+          { 'english': 'Yesterday afternoon', 'translate': 'Ontem de tarde' },
+          { 'english': 'Yesterday evening', 'translate': 'Ontem à noitinha' },
+          { 'english': 'Last night', 'translate': 'Ontem à noite / noite passada' },
+          { 'english': 'The day before yesterday', 'translate': 'Anteontem' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 1B',
+      'vocabulary': [
+          { 'english': 'To remember', 'translate': 'Lembrar-se de' },
+          { 'english': 'To leave', 'translate': 'Deixar / partir / sair (de)' },
+          { 'english': 'To arrive (at / from)', 'translate': 'Chegar (em / de)' },
+          { 'english': 'To miss', 'translate': 'Sentir falta / saudades de / perder (não objeto)' },
+          { 'english': 'To oversleep', 'translate': 'Perder a hora / dormir demais' },
+          { 'english': 'To wake up', 'translate': 'Acordar' },
+          { 'english': 'To get up', 'translate': 'Levantar' },
+          { 'english': 'Alarm clock', 'translate': 'Despertador' },
+          { 'english': 'Clock', 'translate': 'Relógio' },
+          { 'english': 'Watch', 'translate': 'Relógio de pulso' },
+          { 'english': 'In time', 'translate': 'A tempo' },
+          { 'english': 'On time', 'translate': 'Na hora' },
+          { 'english': 'Already', 'translate': 'Já' },
+          { 'english': 'Still', 'translate': 'Ainda' },
+          { 'english': 'Yet', 'translate': 'Ainda' },
+          { 'english': 'Ago', 'translate': 'Atrás (tempo)' },
+          { 'english': 'Hurry up', 'translate': 'Depressa' },
+          { 'english': 'In a hurry', 'translate': 'Com pressa' },
+          { 'english': 'I have no idea', 'translate': 'Eu não tenho nem ideia' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 1C',
+      'vocabulary': [
+          { 'english': 'To remember', 'translate': 'Lembrar-se de' },
+          { 'english': 'To believe (in)', 'translate': 'Acreditar / crer (em)' },
+          { 'english': 'To trust (in)', 'translate': 'Confiar (em)' },
+          { 'english': 'To lie (to)', 'translate': 'Mentir (para)' },
+          { 'english': 'To promise (to)', 'translate': 'Prometer (para)' },
+          { 'english': 'To make a promise', 'translate': 'Fazer uma promessa' },
+          { 'english': 'To make up', 'translate': 'Inventar / criar / fazer as pazes' },
+          { 'english': 'Truth', 'translate': 'Verdade ' },
+          { 'english': 'True', 'translate': 'Verdadeiro (a)' },
+          { 'english': 'Lie', 'translate': 'Mentira' },
+          { 'english': 'Liar', 'translate': 'Mentiroso (a)' },
+          { 'english': 'Angel', 'translate': 'Anjo' },
+          { 'english': 'Ghost', 'translate': 'Fantasma' },
+          { 'english': 'God', 'translate': 'Deus' },
+          { 'english': 'Witch / witches', 'translate': 'Bruxa / bruxas' },
+          { 'english': 'So far', 'translate': 'Por enquanto / até agora' },
+          { 'english': 'Different (from)', 'translate': 'Diferente (de)' },
+          { 'english': 'The same', 'translate': 'O (a) mesmo (a)' },
+          { 'english': 'Anymore', 'translate': 'Mais (frases neg.)' },
+          { 'english': 'Maybe', 'translate': 'Talvez' },
+          { 'english': 'Many', 'translate': 'Muitos (as)' },
+          { 'english': 'Much', 'translate': 'Muito (a)' },
+          { 'english': 'I think so', 'translate': 'Eu acho que sim' },
+          { 'english': 'I don\'t think so', 'translate': 'Eu acho que não' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 2A',
+      'vocabulary': [
+        { 'english': 'To look (at)', 'translate': 'Olhar (para)' },
+        { 'english': 'To smile (at)', 'translate': 'Sorrir (para)' },
+        { 'english': 'To laugh (at)', 'translate': 'Rir (de)' },
+        { 'english': 'Important', 'translate': 'Importante' },
+        { 'english': 'Busy', 'translate': 'Ocupado (a)' },
+        { 'english': 'Funny', 'translate': 'Engraçado (a)' },
+        { 'english': 'If', 'translate': 'Se' },
+        { 'english': 'All the time', 'translate': 'O tempo todo' },
+        { 'english': 'A long time ago', 'translate': 'Há muito tempo atrás' },
+        { 'english': 'Long ago', 'translate': 'Há tempos atrás' },
+        { 'english': 'Last', 'translate': 'Último (a) / passado (a)' },
+        { 'english': 'Last week', 'translate': 'Semana passada' },
+        { 'english': 'Last month', 'translate': 'Mês passado' },
+        { 'english': 'Last year', 'translate': 'Ano passado' },
+        { 'english': 'In a good mood', 'translate': 'De bom humor' },
+        { 'english': 'In a bad mood', 'translate': 'De mau humor' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 2B',
+      'vocabulary': [
+        { 'english': 'Leader', 'translate': 'Líder' },
+        { 'english': 'Player', 'translate': 'Jogador' },
+        { 'english': 'Artist', 'translate': 'Artista' },
+        { 'english': 'Composer', 'translate': 'Compositor (a)' },
+        { 'english': 'Writer', 'translate': 'Escritor (a)' },
+        { 'english': 'Director', 'translate': 'Diretor (a)' },
+        { 'english': 'Producer', 'translate': 'Produtor (a)' },
+        { 'english': 'Playwright', 'translate': 'Dramaturgo (a)' },
+        { 'english': 'Race driver', 'translate': 'Piloto (corrida)' },
+        { 'english': 'Suspense', 'translate': 'Suspense' },
+        { 'english': 'Horror', 'translate': 'Terror' },
+        { 'english': 'Action', 'translate': 'Ação' },
+        { 'english': 'Drama', 'translate': 'Drama' },
+        { 'english': 'Romance', 'translate': 'Romance' },
+        { 'english': 'Adventure', 'translate': 'Aventura' },
+        { 'english': 'Comedy', 'translate': 'Comédia' },
+        { 'english': 'Documentary', 'translate': 'Documentário' },
+        { 'english': 'Crime movie', 'translate': '(Filme) policial' },
+        { 'english': 'Cartoon', 'translate': 'Desenho animado' },
+        { 'english': 'Kind', 'translate': 'Tipo / bondoso (a)' },
+        { 'english': 'What kind (of)', 'translate': 'Que tipo (de)' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 2C',
+      'vocabulary': [
+        { 'english': 'There was', 'translate': 'Havia / existia' },
+        { 'english': 'There were', 'translate': 'Havia / existiam' },
+        { 'english': 'Building', 'translate': 'Prédio / edifício' },
+        { 'english': 'Forest', 'translate': 'Floresta' },
+        { 'english': 'Hill', 'translate': 'Colina' },
+        { 'english': 'Mountain', 'translate': 'Montanha' },
+        { 'english': 'Waterfall', 'translate': 'Cachoeira' },
+        { 'english': 'River', 'translate': 'Rio' },
+        { 'english': 'Lake', 'translate': 'Lago' },
+        { 'english': 'Sea', 'translate': 'Mar' },
+        { 'english': 'Bugs', 'translate': 'Insetos' },
+        { 'english': 'Everybody / everyone', 'translate': 'Todo mundo / todos' },
+        { 'english': 'Somebody / someone', 'translate': 'Alguém' },
+        { 'english': 'Anybody / anyone', 'translate': 'Alguém / ninguém' },
+        { 'english': 'Nobody / no one', 'translate': 'Ninguém' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 2D',
+      'vocabulary': [
+        { 'english': 'I went sightseeing', 'translate': 'Eu visitei os pontos turísticos' },
+        { 'english': 'Bridge', 'translate': 'Ponte' },
+        { 'english': 'I would go', 'translate': 'Eu iria' },
+        { 'english': 'Sharks', 'translate': 'Tubarões' },
+        { 'english': 'Cute', 'translate': 'Bonitinha (o)' },
+        { 'english': 'I wish you were here.', 'translate': 'Eu gostaria que você estivesse aqui' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 3A',
+      'vocabulary': [
+        { 'english': 'To break', 'translate': 'Quebrar' },
+        { 'english': 'To fall (off)', 'translate': 'Cair (de)' },
+        { 'english': 'To hurt', 'translate': 'Machucar / doer / magoar' },
+        { 'english': 'Finger', 'translate': 'Dedo da mão' },
+        { 'english': 'Hand', 'translate': 'Mão' },
+        { 'english': 'Arm', 'translate': 'Braço' },
+        { 'english': 'Toe', 'translate': 'Dedo do pé' },
+        { 'english': 'Foot / feet', 'translate': 'Pé / pés' },
+        { 'english': 'Leg', 'translate': 'Perna' },
+        { 'english': 'Cast', 'translate': 'Gesso / elenco de um filme, peça, etc.' },
+        { 'english': 'Stairs', 'translate': 'Escada (de degraus)' },
+        { 'english': 'Ladder', 'translate': 'Escada móvel' },
+        { 'english': 'Did you ever?', 'translate': 'Você alguma vez?' }
+      ]
+    },
+    {
+      'lesson': 'Orange Unit 3B',
+      'vocabulary': [
+        { 'english': 'To fall asleep', 'translate': 'Adormecer / cair no sono' },
+        { 'english': 'To have a cold', 'translate': 'Estar resfriado (a)' },
+        { 'english': 'To take medicine', 'translate': 'Tomar remédio' },
+        { 'english': 'To take a shot', 'translate': 'Tomar injeção' },
+        { 'english': 'Health', 'translate': 'Saúde' },
+        { 'english': 'Healthy', 'translate': 'Saudável' },
+        { 'english': 'Sick', 'translate': 'Doente' },
+        { 'english': 'Disease / illness', 'translate': 'Doença' },
+        { 'english': 'Fever', 'translate': 'Febre' },
+        { 'english': 'Cough', 'translate': 'Tosse' },
+        { 'english': 'Sore throat', 'translate': 'Dor de garganta / garganta irritada' },
+        { 'english': 'Pain', 'translate': 'Dor' },
+        { 'english': 'Headache', 'translate': 'Dor de cabeça' },
+        { 'english': 'Toothache', 'translate': 'Dor de dente' },
+        { 'english': 'Earache ', 'translate': 'Dor de ouvido' },
+        { 'english': 'Stomachache', 'translate': 'Dor de estômago' },
+        { 'english': 'Backache', 'translate': 'Dor nas costas' },
+        { 'english': 'Prescription', 'translate': 'Prescrição / receita médica' },
+        { 'english': 'Aspirin', 'translate': 'Aspirina' },
+        { 'english': 'Home remedy', 'translate': 'Remédio caseiro' },
+        { 'english': 'Insomnia', 'translate': 'Insônia' },
+        { 'english': 'High blood pressure', 'translate': 'Pressão alta' },
+        { 'english': 'Low blood pressure', 'translate': 'Pressão baixa' }
       ]
     }
   ]
