@@ -1,22 +1,31 @@
 <script>
-import { orderBy } from 'lodash'
+import { mapState } from 'vuex'
+import DpName from './games/components/Name'
+import DpChooseGame from './games/components/ChooseGame'
+import DpPasteGame from './games/components/PasteGame'
 
 export default {
+  components: {
+    DpName,
+    DpChooseGame,
+    DpPasteGame
+  },
   data () {
     return {
-      verbs: [],
-      filtro: '',
       game: [],
-      language: true,
-      type: '',
       checkGame: [],
       title: 'Games',
-      name: ''
+      valor: ''
     }
+  },
+  computed: {
+    ...mapState({
+      hasUser: state => state.Games.user.name !== '',
+      hasGame: state => state.Games.game.type !== ''
+    })
   },
   methods: {
     sortWords: function () {
-      this.game = 'aaaaa'
       let aux = this.$store.state.verbs.irregular[0].verbs
       let item = []
       let a
@@ -39,84 +48,50 @@ export default {
       return ret
     },
     pushName: function () {
-      if (this.name === '') {
+      if (this.valor === '') {
         alert('Por favor, Qual seu nome?')
         return false
       }
-      this.$store.state.name = this.name
-      console.log(this.$store.state.name)
-    }
-  },
-  computed: {
-    filterWord: function () {
-      this.title = 'Games'
-      this.verbs = this.$store.state.verbs.irregular[0].verbs
-      this.verbs = orderBy(this.verbs, ['base'], ['asc'])
-      if (this.filtro) {
-        let exp = new RegExp(this.filtro.trim(), 'i')
-        switch (this.type) {
-          case 'base':
-            return this.verbs.filter(verbs => exp.test(verbs.base))
-          case 'past':
-            return this.verbs.filter(verbs => exp.test(verbs.past))
-          case 'parti':
-            return this.verbs.filter(verbs => exp.test(verbs.parti))
-          case 'translate':
-            return this.verbs.filter(verbs => exp.test(verbs.translate))
-          default:
-            return this.verbs.filter(verbs => exp.test(verbs.base))
-        }
-      } else {
-        return this.verbs
-      }
+      // this.$store.state.name = this.name
+      // console.log(this.$store.state.name)
     }
   }
 }
 </script>
 <template>
     <section>
-      <section>
-          <div class="row">
-              <div class="col s12">
-                  <v-card>
-                      <div class="v-card-content indigo darken-4 white-text">
-                          <header class="center">
-                              <h5><i class="material-icons">star_border</i>{{ title }}<i class="material-icons">star_border</i></h5>
-                          </header>
-                      </div>
-                  </v-card>
-              </div>
-              <div class='col s12'>
-                <v-card>
-                  <div class="v-card-content">
-                    <div class="row">
-                      <div class="col s6">
-                        <vue-typer
-                          :text='["Oi Seja muito Bem-vindo","Qual seu nome?"]'
-                          :repeat='0'
-                          :shuffle='false'
-                          initial-action='erasing'
-                          :pre-type-delay='70'
-                          :type-delay='70'
-                          :pre-erase-delay='2000'
-                          :erase-delay='250'
-                          erase-style='backspace'
-                          :erase-on-complete='false'
-                          caret-animation='phase'
-                        ></vue-typer>
-                      </div>
-                      <div class="col s4">
-                        <div class="input-field">
-                          <v-text-input class="name" id="name" v-model="name"></v-text-input>
-                          <label for="name">Seu nome</label>
-                          <button class="btn-large waves-effect waves-light" v-on:click="pushName">OK</button>
-                        </div>
-                      </div>
-                    </div>
+      <div class="row">
+          <div class="col s12">
+              <v-card>
+                  <div class="v-card-content indigo darken-4 white-text">
+                      <header class="center">
+                          <h5><i class="material-icons">star_border</i>{{ title }}<i class="material-icons">star_border</i></h5>
+                      </header>
                   </div>
-                </v-card>
-              </div>
-              <div class="col s12 center">
+              </v-card>
+          </div>
+          <div v-if="!hasUser"> 
+              <dp-name></dp-name> 
+          </div>          
+          <div v-else-if="!hasGame">
+            <dp-choose-Game></dp-choose-Game> 
+          </div>
+          <div v-else>
+            <dp-paste-game></dp-paste-game> 
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col s12 center" v-if="!hasUser">
                   <button class="btn-large waves-effect waves-light red" v-on:click="sortWords">SORT</button>
               </div>
               <div class="col s12 center">
@@ -170,8 +145,7 @@ export default {
                       </div>
                   </v-card>
               </div>
-          </div>
-     </section>
+          </div>    
    </section>
 </template>
 <style lang="css">
@@ -196,6 +170,9 @@ i {
 .vue-typer {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2.0em;
+}
+.vue-typer .right {
+    float: none !important;
 }
 .vue-typer .custom.char.typed {
   color: #009688;
