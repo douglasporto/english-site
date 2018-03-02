@@ -70,13 +70,13 @@ export default {
                   </div>
               </v-card>
           </div>
-          <div v-if="!hasUser"> 
+          <div class="card-main" v-if="!hasUser"> 
               <dp-name></dp-name> 
           </div>          
-          <div v-else-if="!hasGame">
+          <div class="card-main" v-else-if="!hasGame">
             <dp-choose-Game></dp-choose-Game> 
           </div>
-          <div v-else>
+          <div class="card-main" v-else>
             <dp-paste-game></dp-paste-game> 
           </div>
 
@@ -91,10 +91,10 @@ export default {
 
 
 
-              <div class="col s12 center" v-if="!hasUser">
+              <!-- <div class="col s12 center" v-if="!hasUser">
                   <button class="btn-large waves-effect waves-light red" v-on:click="sortWords">SORT</button>
-              </div>
-              <div class="col s12 center">
+              </div> -->
+              <!-- <div class="col s12 center">
                   <input type="checkbox" id="base" value="base" v-model="checkGame"/>
                   <label for="base">base</label>
                   
@@ -103,8 +103,8 @@ export default {
                   
                   <input type="checkbox" id="participle" value="participle"  v-model="checkGame"/>
                   <label for="participle">Past Participle</label>
-              </div>
-              <div class="col s12">
+              </div> -->
+              <!-- <div class="col s12">
                   {{ this.checkGame }}
                   {{ this.game }}
                   <v-card>
@@ -144,7 +144,7 @@ export default {
                           </table>
                       </div>
                   </v-card>
-              </div>
+              </div> -->
           </div>    
    </section>
 </template>
@@ -162,11 +162,9 @@ i {
 .switch {
   font-size: 10px;
 }
-@keyframes rocking {
-  0%,100% {transform: rotateZ(-10deg);},
-  50%     {transform: rotateZ(10deg);}
+.card-main {
+  height: 400px;
 }
-
 .vue-typer {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2.0em;
@@ -174,21 +172,7 @@ i {
 .vue-typer .right {
     float: none !important;
 }
-.vue-typer .custom.char.typed {
-  color: #009688;
-}
-.vue-typer .custom.char.selected {
-  color: #E91E63;
-}
-
 .vue-typer .custom.caret {
-  animation: rocking 1s ease-in-out 0s infinite;
-}
-.vue-typer .custom.caret.typing {
-  background-color: #009688;
-}
-.vue-typer .custom.caret.selecting {
-  display: inline-block;
-  background-color: #E91E63;
+  display: none;
 }
 </style>

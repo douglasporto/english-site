@@ -1,29 +1,30 @@
 <template>
 	<section>
 		<div class='col s12'>
-      <v-card>
+      <v-card class="card-main">
         <div class="v-card-content">
           <div class="row">
-            <div class="col s6">
+            <div class="col s6 offset-s3">
               <div class="text-typed">              
                 <vue-typer
-                  :text='["Legal!","Tudo bem " + name + " ?", "Escolha o jogo"]'
-                  :repeat='0':shuffle='false'
-                  initial-action='erasing'
+                  :text='["Ah, entendi!","Tudo bem " + name + " ?", "Escolha um jogo"]'
+                  :repeat='0'
+                  :shuffle='false'
+                  initial-action='typing'
                   :pre-type-delay='70'
-                  :type-delay='30'
+                  :type-delay='60'
                   :pre-erase-delay='2000'
                   :erase-delay='50'
-                  erase-style='select-back'
+                  erase-style='backspace'
                   :erase-on-complete='false'
-                  caret-animation='blink'
+                  caret-animation='solid'
                 ></vue-typer>
               </div>
             </div>            
           </div>
           <div class="row">
-            <div class="col s6 center">
-              <button class="btn-large waves-effect waves-light" v-on:click="chooseGame('paste')">Paste Game</button>
+            <div class="col s6 center offset-s3">
+              <button class="btn-large waves-effect waves-light" v-on:click="chooseGame('paste')" v-show="pronto">Verbos Irregulares</button>
             </div>
           </div>
         </div>
@@ -37,7 +38,8 @@ import { mapState, mapActions } from 'vuex'
 export default {
   data () {
     return {
-      valor: ''
+      valor: '',
+      pronto: false
     }
   },
   methods: {
@@ -59,6 +61,11 @@ export default {
     ...mapState({
       hasGame: state => state.Games.game !== ''
     })
+  },
+  mounted () {
+    setTimeout(() => {
+      this.pronto = true
+    }, 6000)
   }
 }
 </script>
@@ -66,5 +73,5 @@ export default {
   .text-typed {
      padding-top: 2em;
      padding-left: 2em;
-  } 
+  }
 </style>

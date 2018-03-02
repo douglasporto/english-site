@@ -1,22 +1,23 @@
 <template>
 	<section>
 		<div class='col s12'>
-      <v-card>
+      <v-card class="card-main">
         <div class="v-card-content">
           <div class="row">
-            <div class="col s6">
+            <div class="col s12">
               <div class="text-typed">              
                 <vue-typer
-                  :text='["Ualll","Ótima escolha " + name + " ?", "Eu adoro esse jogo", "Bom, vamos lá", "Configure o jogo"]'
-                  :repeat='0':shuffle='false'
-                  initial-action='erasing'
+                  :text='["Ualll... Ótima escolha " + name, "Eu adoro este jogo", "Bom, vamos lá...", " Preste muito atenção \n Neste jogo você deverá acertar a gramatica do Verbo Irregular solicitado \n Qualquer letra digitada errada, vê perderá ponto\n Configure o jogo"]'
+                  :repeat='0'
+                  :shuffle='false'
+                  initial-action='typing'
                   :pre-type-delay='70'
-                  :type-delay='30'
-                  :pre-erase-delay='2000'
+                  :type-delay='40'
+                  :pre-erase-delay='1000'
                   :erase-delay='50'
-                  erase-style='select-back'
+                  erase-style='backspace'
                   :erase-on-complete='false'
-                  caret-animation='blink'
+                  caret-animation='solid'
                 ></vue-typer>
               </div>
             </div>            

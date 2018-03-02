@@ -1,27 +1,29 @@
 <template>
-	<section>
+	<section class="card-main">
 		<div class='col s12'>
-      <v-card>
+      <v-card class="card-main">
         <div class="v-card-content">
           <div class="row">
-            <div class="col s6">
+            <div class="col s6 offset-s3">
             	<div class="text-typed">
 	              <vue-typer
-	                :text='["Oi Seja muito Bem-vindo","Qual seu nome?"]'
-	                :repeat='0'
-	                :shuffle='false'
-	                initial-action='erasing'
-	                :pre-type-delay='70'
-	                :type-delay='30'
-	                :pre-erase-delay='2000'
-	                :erase-delay='50'
-	                erase-style='select-back'
-	                :erase-on-complete='false'
-	                caret-animation='blink'
+									:text='["Oi Seja muito Bem-vindo \n Qual seu nome?"]'
+									:repeat='0'
+									:shuffle='false'
+									initial-action='typing'
+									:pre-type-delay='70'
+									:type-delay='40'
+									:pre-erase-delay='2000'
+									:erase-delay='50'
+									erase-style='backspace'
+									:erase-on-complete='false'
+									caret-animation='solid'
 	              ></vue-typer>
             	</div>
             </div>
-            <div class="col s4">
+          </div>
+          <div class="row">
+            <div class="col s4 offset-s3">
               <div class="input-field">
                 <v-text-input class="name" id="valor" v-model="valor"></v-text-input>
                 <label for="name">Seu nome</label>                
