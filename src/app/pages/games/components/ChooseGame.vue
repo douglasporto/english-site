@@ -49,6 +49,7 @@ export default {
         type: game
       }
       console.log(payload)
+      console.log('aqui')
       this.changeGame(payload)
       // this.$store.commit('CHANGE_USER', payload)
     }

@@ -7,7 +7,7 @@
             <div class="col s6 offset-s3">
             	<div class="text-typed">
 	              <vue-typer
-									:text='["Oi Seja muito Bem-vindo \n Qual seu nome?"]'
+									:text='["Oi seja Bem-vindo \n Qual seu nome?"]'
 									:repeat='0'
 									:shuffle='false'
 									initial-action='typing'
