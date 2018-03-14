@@ -23,7 +23,7 @@ export default {
         <v-container fluid>
           <v-layout row>
             <v-flex xs8>
-              <v-subheader class="black--text">Quantas Perguntas?</v-subheader>
+              <v-subheader class="black--text">Quantas perguntas?</v-subheader>
             </v-flex>
             <v-flex xs4 >
               <v-text-field
