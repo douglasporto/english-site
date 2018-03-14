@@ -49,7 +49,7 @@
                 <label for="past">Past Tense</label>
                 
                 <input type="checkbox" id="participle" value="participle"  v-model="checkGame"/>
-                <label for="participle">Past Participle</label>
+                <label for="participle">Past participle</label>
               </div>
             </div>
       </v-card>
