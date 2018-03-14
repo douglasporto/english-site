@@ -3,12 +3,15 @@
 import Vue from 'vue'
 import App from './app/Main'
 import router from './router'
-import Materials from 'vue-materials'
+// import Materials from 'vue-materials'
+import Vuetify from 'vuetify'
 import store from './store/store'
 import VueTyperPlugin from 'vue-typer'
 
 Vue.use(VueTyperPlugin)
-Vue.use(Materials)
+Vue.use(Vuetify)
+
+import 'vuetify/dist/vuetify.min.css'
 
 Vue.config.productionTip = false
 
