@@ -4,5 +4,8 @@ export default {
   },
   changeGame (context, payload) {
     context.commit('CHANGE_GAME', payload)
+  },
+  changeQuestions (context, payload) {
+    context.commit('CHANGE_QUESTIONS', payload)
   }
 }

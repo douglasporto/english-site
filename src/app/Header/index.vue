@@ -1,7 +1,7 @@
 <template>
   <div class="navbar-fixed">
     <v-nav nav-class="red darken-1 fixe">
-      <v-container class='container-nav'>
+      <div class='container-nav' style="margin-left: 60px;">
         <router-link to="/" class="center brand-logo" >{{ nameSite }}</router-link>
         <ul class="nav-ul right hide-on-med-and-down">
           <li>
@@ -9,6 +9,9 @@
           </li>
           <li>
               <router-link to="/verbs" class="">Irregular Verbs</router-link>
+          </li>
+          <li>
+              <router-link to="/Game" class="">Verbs Game</router-link>
           </li>
           <!--<li>
               <v-btn v-dropdown:dropdown class="amber darken-2" hover>Dark Yellow</v-btn>
@@ -50,7 +53,7 @@
             </li>
           </ul>
        </v-side-nav>
-      </v-container>
+      </div>
     </v-nav>
     <!--
     <v-dropdown id="dropdown">

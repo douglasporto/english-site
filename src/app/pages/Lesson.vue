@@ -5,6 +5,7 @@ export default {
     return {
       vocabulary: [],
       classies: [],
+      icon: [],
       homework: '',
       filtro: '',
       language: true,
@@ -64,7 +65,7 @@ export default {
                       </div>
                   </v-card>
               </div>
-              <div class="col s12">
+              <!-- <div class="col s12">
                 <v-card>
                   <div class="v-card-content">
                     <v-tabs>
@@ -74,7 +75,7 @@ export default {
                     </v-tabs>
                   </div>
                 </v-card>
-              </div>
+              </div> -->
               <div class="col s12" id="homework">
                 <v-card>
                   <div class="v-card-content">
@@ -83,13 +84,12 @@ export default {
                         <b><div v-if="obj.lesson">{{ obj.lesson }})</div>{{ obj.title }}</b>
                       </div>
                       <div v-for='(aux, index) in obj.questions' class="row questions">
-                        <div class="col s8">{{ index + 1}} ) {{ aux.q }}</div>
-                        <div class="col s4">
-                          <v-switch
-                          on="Show answer"
-                          off="Hide"
-                          v-model='aux.visible'
-                          ></v-switch>
+                        <div class="col m8">{{ index + 1}} ) {{ aux.q }}</div>
+                        <div class="col m4">
+                          <button class="btn waves-effect waves-light indigo darken-4 white-text" v-on:click="aux.visible = !aux.visible">
+                            <div v-if="!aux.visible">Mostrar resposta</div>
+                            <div v-if="aux.visible">Esconder resposta</div>
+                          </button>                          
                         </div>
                         <div v-show="aux.visible" class="col s12 answer" v-html="aux.r"></div>
                       </div>
