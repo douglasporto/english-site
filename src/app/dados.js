@@ -34,6 +34,15 @@ export const createDados = {
           { 'name': 'Lesson 3A', 'url': '/vocabulary?class=19' },
           { 'name': 'Lesson 3B', 'url': '/vocabulary?class=20' }
         ]
+      },
+      {
+        'name': 'Light Green',
+        'menu': [
+          { 'name': 'Lesson 1A', 'url': '/vocabulary?class=21' },
+          { 'name': 'Lesson 1B', 'url': '/vocabulary?class=22' },
+          { 'name': 'Lesson 2A', 'url': '/vocabulary?class=23' },
+          { 'name': 'Lesson 2B', 'url': '/vocabulary?class=24' }
+        ]
       }
     ]
   },
@@ -696,6 +705,110 @@ export const createDados = {
         { 'english': 'Insomnia', 'translate': 'Insônia' },
         { 'english': 'High blood pressure', 'translate': 'Pressão alta' },
         { 'english': 'Low blood pressure', 'translate': 'Pressão baixa' }
+      ]
+    },
+    {
+      'lesson': 'Light Green Unit 1A',
+      'vocabulary': [
+        { 'english': 'to knock (on)', 'translate': 'bater (em)' },
+        { 'english': 'to enter', 'translate': 'entrar em' },
+        { 'english': 'to close', 'translate': 'fechar' },
+        { 'english': 'to go in (into)', 'translate': 'entrar' },
+        { 'english': 'to come in', 'translate': 'entrar' },
+        { 'english': 'to go back', 'translate': 'voltar' },
+        { 'english': 'to turn on', 'translate': 'ligar' },
+        { 'english': 'to turn off', 'translate': 'desligar' },
+        { 'english': 'to be silent', 'translate': 'ficar em silêncio' },
+        { 'english': '(in) silence', 'translate': '(em) silêncio' },
+        { 'english': 'curtain', 'translate': 'cortina' },
+        { 'english': 'to draw the curtain', 'translate': 'abrir / fechar a cortina' },
+        { 'english': 'once in a while', 'translate': 'de vez em quando' },
+        { 'english': 'while', 'translate': 'enquanto' },
+        { 'english': 'to make sure', 'translate': 'certificar-se / ter certeza' },
+        { 'english': 'forgetful', 'translate': 'esquecido (a)' },
+        { 'english': 'apparently', 'translate': 'aparentemente' },
+        { 'english': 'market', 'translate': 'mercado' },
+        { 'english': 'garage', 'translate': 'garagem' },
+        { 'english': 'door', 'translate': 'porta' },
+        { 'english': 'doorbell', 'translate': 'campainha' },
+        { 'english': 'window', 'translate': 'janela' },
+        { 'english': 'closed', 'translate': 'fechado (a)' }
+      ]
+    },
+    {
+      'lesson': 'Light Green Unit 1B',
+      'vocabulary': [
+        { 'english': 'to pull', 'translate': 'puxar' },
+        { 'english': 'to push', 'translate': 'empurrar' },
+        { 'english': 'to lock', 'translate': 'travar / trancar' },
+        { 'english': 'to peep', 'translate': 'espiar' },
+        { 'english': 'on purpose', 'translate': 'de propósito' },
+        { 'english': 'used to', 'translate': 'costumava' },
+        { 'english': 'from now on', 'translate': 'de agora em diante' },
+        { 'english': 'it\'s about time', 'translate': 'já é hora' },
+        { 'english': 'keyhole', 'translate': 'buraco da fechadura' },
+        { 'english': 'peephole', 'translate': 'olho mágico' },
+        { 'english': 'handle', 'translate': 'puxador / maçaneta / alça (de mala, xícara, etc.)' },
+        { 'english': 'key ring', 'translate': 'chaveiro (de bolso)' },
+        { 'english': 'locksmith', 'translate': 'chaveiro (profissão)' },
+        { 'english': 'drawer ', 'translate': 'gaveta' },
+        { 'english': 'padlock', 'translate': 'cadeado' },
+        { 'english': 'gate', 'translate': 'portão' },
+        { 'english': 'locked', 'translate': 'trancado (a)' },
+        { 'english': 'heavy', 'translate': 'pesado (a)' },
+        { 'english': 'basement', 'translate': 'porão (habitável)' },
+        { 'english': 'cellar', 'translate': 'porão / adega' },
+        { 'english': 'attic', 'translate': 'sótão' },
+        { 'english': 'through', 'translate': 'através de / por' }
+      ]
+    },
+    {
+      'lesson': 'Light Green Unit 2A',
+      'vocabulary': [
+        { 'english': 'to apply (for)', 'translate': 'inscrever-se / candidatar-se (para)' },
+        { 'english': 'to fill in / out', 'translate': 'preencher' },
+        { 'english': 'to interview', 'translate': 'entrevistar' },
+        { 'english': 'to hire ', 'translate': 'contratar' },
+        { 'english': 'to fire', 'translate': 'demitir' },
+        { 'english': 'to dismiss', 'translate': 'demitir / ignorar / rejeitar' },
+        { 'english': 'to turn down', 'translate': 'rejeitar / recusar' },
+        { 'english': 'to give (someone) a chance', 'translate': 'dar uma chance a alguém' },
+        { 'english': 'one at a time', 'translate': 'um de cada vez' },
+        { 'english': 'to take a chance (on)', 'translate': 'tentar / fazer uma tentativa /' },
+        { 'english': 'company', 'translate': 'companhia / empresa' },
+        { 'english': 'main office', 'translate': 'escritório central (matriz)' },
+        { 'english': 'branch', 'translate': 'filial' },
+        { 'english': 'employer', 'translate': 'empregador' },
+        { 'english': 'employee', 'translate': 'empregado' },
+        { 'english': 'résumé', 'translate': 'currículo' },
+        { 'english': 'applicant', 'translate': 'candidato' },
+        { 'english': 'application form', 'translate': 'formulário' },
+        { 'english': 'interview', 'translate': 'entrevista' },
+        { 'english': 'loan', 'translate': 'empréstimo' }
+      ]
+    },
+    {
+      'lesson': 'Light Green Unit 2B',
+      'vocabulary': [
+        { 'english': 'to publish', 'translate': 'publicar' },
+        { 'english': 'to advertise', 'translate': 'anunciar' },
+        { 'english': 'to offer', 'translate': 'oferecer' },
+        { 'english': 'to place an advertisement (ad)', 'translate': 'colocar um anúncio' },
+        { 'english': 'part time', 'translate': 'meio expediente' },
+        { 'english': 'full time', 'translate': 'período integral' },
+        { 'english': 'to work overtime', 'translate': 'trabalhar horas extras' },
+        { 'english': 'to be out of a job ', 'translate': 'ficar / estar sem emprego' },
+        { 'english': 'the day after tomorrow', 'translate': 'depois de amanhã' },
+        { 'english': 'article ', 'translate': 'artigo (jornal, revista, etc)' },
+        { 'english': 'advertisement (ad)', 'translate': 'anúncio' },
+        { 'english': 'offer', 'translate': 'oferta' },
+        { 'english': 'opening', 'translate': 'vaga (emprego)' },
+        { 'english': 'report', 'translate': 'relatório' },
+        { 'english': 'staff', 'translate': 'equipe de trabalho' },
+        { 'english': 'computer', 'translate': 'computador' },
+        { 'english': 'address', 'translate': 'endereço' },
+        { 'english': 'zip code', 'translate': 'código postal (CEP)' },
+        { 'english': 'available', 'translate': 'disponível' }
       ]
     }
   ]

@@ -104,8 +104,8 @@ export default {
                     </div>
                   </td>
                   <td>
-                    <div class="r_errada" v-if="questions[index].parti !== 'ok' ">
-                      {{ questions[index].parti}}
+                    <div class="r_errada" v-if="questions[index].participle !== 'ok' ">
+                      {{ questions[index].participle}}
                     </div>
                     <div class="r_certa">
                       <b>{{ obj.parti }}</b>

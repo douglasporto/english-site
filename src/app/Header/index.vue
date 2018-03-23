@@ -27,6 +27,14 @@
           </div>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
+              <div class="collapsible-header green-text text-darken-1"><i class="material-icons">create</i>LIGHT GREEN</div>
+              <div class="collapsible-body">
+                <li v-for="obj in sidebar[3].menu">
+                    <router-link :to="obj.url" class="green-text text-darken-2">{{ obj.name }}</router-link>
+                </li>
+              </div>
+            </li>
+            <li>
               <div class="collapsible-header orange-text text-darken-2"><i class="material-icons">create</i>ORANGE</div>
               <div class="collapsible-body">
                 <li v-for="obj in sidebar[2].menu">
