@@ -1,59 +1,57 @@
 <template>
-	<section>
-		<div class='col s12'>
-      <v-card class="card-main">
-        <div class="v-card-content">
-          <div class="container">
-            <div class="row">
-              <div class="col s12">
-                <div class="text-typed">              
-                  <vue-typer
-                    :text='["Ualll... Ótima escolha " + name, "Eu adoro este jogo", "Bom, vamos lá...", " Preste muito atenção \n Neste jogo você deverá acertar a gramatica dos verbo \n Qualquer letra digitada erradamente, você perderá ponto\n Configure o jogo"]'
-                    :repeat='0'
-                    :shuffle='false'
-                    initial-action='typing'
-                    :pre-type-delay='70'
-                    :type-delay='40'
-                    :pre-erase-delay='1000'
-                    :erase-delay='50'
-                    erase-style='backspace'
-                    :erase-on-complete='false'
-                    caret-animation='solid'
-                  ></vue-typer>
-                </div>
-              </div>            
+	<section>    
+    <v-card class="card-main">
+      <div class="v-card-content">
+        <v-container fluid>
+          <div class="row">
+            <div class="col s3">
+              <h5>Quantidade de Palavras?</h5>
+              <div class="input-field">
+                <v-text-field
+                  type='number'
+                  name="valor"
+                  id="valor"
+                  v-model="qtd_word"
+                ></v-text-field>
+              </div>
+            </div>
+            <div class="col s5 offset-s2">
+              <h5>Qual tempo verbal irá treinar?</h5>
+              <v-checkbox
+                label="BASE"
+                v-model="checkGame"
+                color="indigo"
+                value="BASE"
+                hide-details
+              ></v-checkbox>
+              <v-checkbox
+                label="PAST"
+                v-model="checkGame"
+                color="indigo"
+                value="past"
+                hide-details
+              ></v-checkbox>
+              <v-checkbox
+                label="PARTICIPLE"
+                v-model="checkGame"
+                color="indigo"
+                value="participle"
+                hide-details
+              ></v-checkbox>
             </div>
           </div>
-        </div>
-      </v-card>
-      <v-card class="card-main">
-        <div class="v-card-title">
-          aaaaaaaaaaa
-        </div>
-        <div class="row">
-              <div class="col s5">
-                <div class="input-field">
-                  <v-text-input class="name" id="valor" v-model="valor"></v-text-input>
-                  <label for="name">Quantos verbos gostaria de treinar?</label>                
-                </div>
-              </div>
-              <div class="col s6">
-                <div>
-                  O que você gostaria de treinar?
-                </div>
-                
-                <input type="checkbox" id="base" value="base" v-model="checkGame"/>
-                <label for="base">base</label>
-                
-                <input type="checkbox" id="past" value="past"  v-model="checkGame"/>
-                <label for="past">Past Tense</label>
-                
-                <input type="checkbox" id="participle" value="participle"  v-model="checkGame"/>
-                <label for="participle">Past participle</label>
-              </div>
+
+          <div class="row">
+            <div class="col s12 center">
+              <!-- <v-btn color="success">Success</v-btn> -->
+              <!-- <v-btn outline color="indigo">Começar</v-btn> -->
+              <button class="btn-large waves-effect waves-light" v-on:click="mudarDados">COMEÇAR</button>
+
             </div>
-      </v-card>
-    </div>
+          </div>
+        </v-container>
+      </div>
+    </v-card>
 	</section>
 </template>
 <script>
@@ -62,12 +60,47 @@ import { mapState, mapActions } from 'vuex'
 export default {
   data () {
     return {
-      valor: '',
+      qtd_word: 0,
       checkGame: []
     }
   },
   methods: {
     ...mapActions(['changeGame']),
+    sortWords: function () {
+      let aux = this.$store.state.verbs.irregular[0].verbs
+      let item = []
+      let a
+      let r
+      let qtd = this.qtd_word
+      for (var i = 0; i < qtd; i++) {
+        a = aux.find((_, i, ar) => Math.random() < 1 / (ar.length - i))
+        item.push(a)
+        r = aux.indexOf(a)
+        if (r !== -1) {
+          aux.splice(r, 1)
+        }
+      }
+      return item
+    },
+    mudarDados () {
+      if (this.qtd_word > 136 || this.qtd_word < 0 || this.qtd_word === '') {
+        alert('Por favor, escolha um número de 0 à 136.')
+        return false
+      }
+      if (this.checkGame.length === 0) {
+        alert('Por favor, selecione um tempo verbal.')
+        return false
+      }
+      let words = this.sortWords()
+      const payload = {
+        name: 'paste_verbs',
+        ask: this.qtd_word,
+        forms: this.checkGame,
+        words: words
+      }
+      this.changeGame(payload)
+      // this.$store.commit('CHANGE_USER', payload)
+    },
     chooseGame (game) {
       const payload = {
         type: game

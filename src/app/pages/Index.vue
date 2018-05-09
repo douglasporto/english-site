@@ -31,11 +31,7 @@ export default {
       this.vocabulary = orderBy(this.vocabulary, ['english'], ['asc'])
       if (this.filtro) {
         let exp = new RegExp(this.filtro.trim(), 'i')
-        if (this.language === true) {
-          return this.vocabulary.filter(vocabulary => exp.test(vocabulary.translate))
-        } else {
-          return this.vocabulary.filter(vocabulary => exp.test(vocabulary.english))
-        }
+        return this.vocabulary.filter(vocabulary => exp.test([vocabulary.translate, vocabulary.english]))
       } else {
         return this.vocabulary
       }
@@ -58,38 +54,32 @@ export default {
               </div>
               <div class="col s12">
                   <v-card>
-                      <div class="v-card-content">
-                        <div class="input-field">
-                            <v-icon prefix>search</v-icon>
-                            <v-text-input class="filtro" id="filtro" v-model="filtro"></v-text-input>
-                            <label for="filtro">Search Word In</label>
-                        </div>
-                          <br>
-                          <font class="switch"><i>Search Word In:</i></font>
-                          <v-switch checked
-                            on="Portuguese"
-                            off="English"
-                            v-model='language'
-                          ></v-switch>
-                          <table class="striped text-vocabulary">
-                              <thead>
-                                  <tr>
-                                      <th>Word</th>
-                                      <th>Translate</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                  <tr v-for="(obj, index) in filterWord">
-                                      <td class="left">
-                                        {{ obj.english }}
-                                      </td>
-                                      <td>
-                                        {{ obj.translate }}
-                                      </td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>
+                    <div class="v-card-content">
+                      <v-text-field
+                        name="filtro"
+                        label="Search Word In"
+                        v-model="filtro"
+                        prepend-icon="search">                          
+                      </v-text-field>                          
+                      <table class="striped text-vocabulary">
+                          <thead>
+                              <tr>
+                                  <th>Word</th>
+                                  <th>Translate</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr v-for="(obj, index) in filterWord">
+                                  <td class="left">
+                                    {{ obj.english }}
+                                  </td>
+                                  <td>
+                                    {{ obj.translate }}
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    </div>
                   </v-card>
               </div>
           </div>

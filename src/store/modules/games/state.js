@@ -1,11 +1,7 @@
 export default {
-  game: {
-    type: '',
-    ask: '',
-    forms: []
-  },
-  user: {
-    name: ''
-  },
-  selected: {}
+  name: '',
+  ask: '',
+  forms: [],
+  words: {},
+  questions: []
 }

@@ -17,18 +17,7 @@ export default {
       this.verbs = orderBy(this.verbs, ['base'], ['asc'])
       if (this.filtro) {
         let exp = new RegExp(this.filtro.trim(), 'i')
-        switch (this.type) {
-          case 'base':
-            return this.verbs.filter(verbs => exp.test(verbs.base))
-          case 'past':
-            return this.verbs.filter(verbs => exp.test(verbs.past))
-          case 'parti':
-            return this.verbs.filter(verbs => exp.test(verbs.parti))
-          case 'translate':
-            return this.verbs.filter(verbs => exp.test(verbs.translate))
-          default:
-            return this.verbs.filter(verbs => exp.test(verbs.base))
-        }
+        return this.verbs.filter(verbs => exp.test([verbs.base, verbs.past, verbs.parti, verbs.translate]))
       } else {
         return this.verbs
       }
@@ -51,54 +40,40 @@ export default {
               </div>
               <div class="col s12">
                   <v-card>
-                      <div class="v-card-content">
-                        <div class="input-field">
-                            <v-icon prefix>search</v-icon>
-                            <v-text-input class="filtro" id="filtro" v-model="filtro"></v-text-input>
-                            <label for="filtro">Search Word In</label>
-                        </div>
-                          <br>
-                          <font class="switch"><i>Search Word In:</i></font><br>
-                            <input class="with-gap" name="group1" type="radio" value="base" v-model="type" id="base" />
-                            <label for="base">Base</label>
-                            <input class="with-gap" name="group1" type="radio" value="past" v-model="type" id="past" />
-                            <label for="past">Past</label>
-                            <input class="with-gap" name="group1" type="radio" value="parti" v-model="type" id="parti"  />
-                            <label for="parti">Past Participle</label>
-                            <input class="with-gap"name="group1" type="radio" value="translate" v-model="type" id="translate"/>
-                            <label for="translate">Translate</label>
-                          <!--<v-switch checked
-                            on="Portuguese"
-                            off="English"
-                            v-model='language'
-                          ></v-switch>-->
-                          <table class="centered striped text-vocabulary responsive-table">
-                              <thead>
-                                  <tr>
-                                    <th>Base Form</th>
-                                    <th>Past Tense</th>
-                                    <th>Past Participle</th>
-                                    <th>Translate</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                  <tr v-for="(obj, index) in filterWord">
-                                      <td>
-                                        {{ obj.base }}
-                                      </td>
-                                      <td>
-                                        {{ obj.past }}
-                                      </td>
-                                      <td>
-                                        {{ obj.parti }}
-                                      </td>
-                                      <td>
-                                        {{ obj.translate }}
-                                      </td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>
+                    <div class="v-card-content">
+                      <v-text-field
+                      name="filtro"
+                      label="Search Word In"
+                      v-model="filtro"
+                      prepend-icon="search">                          
+                      </v-text-field>                          
+                        <table class="centered striped text-vocabulary responsive-table">
+                          <thead>
+                              <tr>
+                                <th>Base Form</th>
+                                <th>Past Tense</th>
+                                <th>Past Participle</th>
+                                <th>Translate</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr v-for="(obj, index) in filterWord">
+                                <td>
+                                  {{ obj.base }}
+                                </td>
+                                <td>
+                                  {{ obj.past }}
+                                </td>
+                                <td>
+                                  {{ obj.parti }}
+                                </td>
+                                <td>
+                                  {{ obj.translate }}
+                                </td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </v-card>
               </div>
           </div>

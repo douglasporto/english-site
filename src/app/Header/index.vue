@@ -1,7 +1,7 @@
 <template>
   <div class="navbar-fixed">
     <v-nav nav-class="red darken-1 fixe">
-      <v-container class='container-nav'>
+      <div class='container-nav' style="margin-left: 60px;">
         <router-link to="/" class="center brand-logo" >{{ nameSite }}</router-link>
         <ul class="nav-ul right hide-on-med-and-down">
           <li>
@@ -9,6 +9,9 @@
           </li>
           <li>
               <router-link to="/verbs" class="">Irregular Verbs</router-link>
+          </li>
+          <li>
+              <router-link to="/Game" class="">Verbs Game</router-link>
           </li>
           <!--<li>
               <v-btn v-dropdown:dropdown class="amber darken-2" hover>Dark Yellow</v-btn>
@@ -23,6 +26,14 @@
             Modules
           </div>
           <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header green-text text-darken-1"><i class="material-icons">create</i>LIGHT GREEN</div>
+              <div class="collapsible-body">
+                <li v-for="obj in sidebar[3].menu">
+                    <router-link :to="obj.url" class="green-text text-darken-2">{{ obj.name }}</router-link>
+                </li>
+              </div>
+            </li>
             <li>
               <div class="collapsible-header orange-text text-darken-2"><i class="material-icons">create</i>ORANGE</div>
               <div class="collapsible-body">
@@ -50,7 +61,7 @@
             </li>
           </ul>
        </v-side-nav>
-      </v-container>
+      </div>
     </v-nav>
     <!--
     <v-dropdown id="dropdown">
